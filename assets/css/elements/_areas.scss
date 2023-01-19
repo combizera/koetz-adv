@@ -1,0 +1,11 @@
+.areas-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+
+  .area-card {
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
+    // box-shadow: 0px 10px 15px #000;
+    padding: 30px;
+  }
+}

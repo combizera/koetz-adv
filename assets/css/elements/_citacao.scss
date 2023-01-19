@@ -1,0 +1,16 @@
+.bg-citacao {
+  background-color: $red;
+}
+.citacao {
+  flex-direction: row;
+  color: $white;
+  padding: 20px;
+  img {
+    max-width: 350px;
+    margin-right: 40px;
+  }
+  p {
+    margin-top: 40px;
+    color: $white;
+  }
+}
