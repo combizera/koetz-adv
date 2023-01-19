@@ -60,10 +60,10 @@ body {
     }
   }
 }
+
 .container {
   max-width: $container-xl;
   margin: 0 auto;
-
   border: 2px solid green;
 
   @include responsive(s) {
@@ -71,6 +71,14 @@ body {
     padding: 32px 18px;
   }
 }
+
+.secao {
+  padding: 120px 60px;
+  @include responsive(s) {
+    padding: 120px 20px;
+  }
+}
+
 img {
   max-width: 100%;
   object-fit: cover;
@@ -83,4 +91,11 @@ img {
 .aspas {
   font-size: 300px;
   color: $grey-dark;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
