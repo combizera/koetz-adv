@@ -11,10 +11,6 @@ html {
 
 body {
   width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-family: "Source Sans Pro", sans-serif;
   color: inherit;
   font-size: 1.125rem;
@@ -109,6 +105,7 @@ h2 {
 
 h3 {
   font-weight: 700;
+  text-transform: uppercase;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.5rem;
   line-height: 2.25rem;
@@ -207,6 +204,9 @@ a {
   margin-left: 1rem;
 }
 
+.secao-tit {
+  text-align: center;
+}
 .secao-tit p {
   font-size: 30px;
   line-height: 100%;
@@ -257,13 +257,13 @@ a {
   margin-top: 40px;
 }
 
-.bg-citacao {
+.bg-red {
   background-color: #c20000;
+  color: #fff;
 }
 
 .citacao {
   flex-direction: row;
-  color: #fff;
   padding: 20px 200px;
 }
 .citacao img {
@@ -275,11 +275,67 @@ a {
   color: #fff;
 }
 
+#citacao2 {
+  text-align: center;
+  padding: 60px 300px;
+}
+
 .solucoes-container {
   align-items: center;
 }
 
-.areas-cards .area-card {
+.areas-cards a {
+  text-decoration: none;
+  color: inherit;
+}
+.areas-cards .areas-card {
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
   padding: 30px;
+  height: 350px;
+  transition: all 0.3s;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: flex-start;
+}
+.areas-cards .areas-card p {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+}
+.areas-cards .areas-card:hover span {
+  color: #fff;
+}
+.areas-cards .areas-card:hover p {
+  color: #fff;
+}
+.areas-cards .area-card1 {
+  background-image: url("./../img/beneficios_prev_branco_card.webp");
+  background-position: center;
+}
+.areas-cards .area-card1:hover {
+  background-image: url("./../img/beneficios_prev_vermelho_2_card.webp");
+  color: #fff;
+}
+.areas-cards .area-card2 {
+  background-image: url("./../img/tributos_pessoais_branco_Card.webp");
+  background-position: center;
+}
+.areas-cards .area-card2:hover {
+  background-image: url("./../img/tributos_pessoais_vermelho_Card.webp");
+  color: #fff;
+}
+.areas-cards .area-card3 {
+  background-image: url("./../img/trabalho_migracao_branco_Card.webp");
+  background-position: center;
+}
+.areas-cards .area-card3:hover {
+  background-image: url("./../img/trabalho_migracao_vermelho_2_Card.webp");
+  color: #fff;
+}
+.areas-cards .area-card4 {
+  background-image: url("./../img/legalizacao_branco_card.webp");
+  background-position: left;
+}
+.areas-cards .area-card4:hover {
+  background-image: url("./../img/legalizacao_vermelho_2_card.webp");
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */

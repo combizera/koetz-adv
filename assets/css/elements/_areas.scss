@@ -1,7 +1,62 @@
 .areas-cards {
-  .area-card {
+  // display: none;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .areas-card {
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
-    // box-shadow: 0px 10px 15px #000;
     padding: 30px;
+    height: 350px;
+    transition: all 0.3s;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    align-items: flex-start;
+    p {
+      font-size: 1.5rem;
+      padding-top: 2rem;
+    }
+    &:hover {
+      span {
+        color: $white;
+      }
+      p {
+        color: $white;
+      }
+    }
+  }
+  .area-card1 {
+    background-image: url("./../img/beneficios_prev_branco_card.webp");
+    background-position: center;
+    &:hover {
+      background-image: url("./../img/beneficios_prev_vermelho_2_card.webp");
+      color: $white;
+    }
+  }
+  .area-card2 {
+    background-image: url("./../img/tributos_pessoais_branco_Card.webp");
+    background-position: center;
+    &:hover {
+      background-image: url("./../img/tributos_pessoais_vermelho_Card.webp");
+      color: $white;
+    }
+  }
+  .area-card3 {
+    background-image: url("./../img/trabalho_migracao_branco_Card.webp");
+    background-position: center;
+    &:hover {
+      background-image: url("./../img/trabalho_migracao_vermelho_2_Card.webp");
+      color: $white;
+    }
+  }
+  .area-card4 {
+    background-image: url("./../img/legalizacao_branco_card.webp");
+
+    background-position: left;
+    &:hover {
+      background-image: url("./../img/legalizacao_vermelho_2_card.webp");
+      color: $white;
+    }
   }
 }

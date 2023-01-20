@@ -1,10 +1,12 @@
-.bg-citacao {
+.bg-red {
   background-color: $red;
+  color: $white;
 }
+
 .citacao {
   flex-direction: row;
-  color: $white;
-  padding: 20px 0200px;
+  padding: 20px 200px;
+
   img {
     max-width: 350px;
     margin-right: 40px;
@@ -13,4 +15,9 @@
     margin-top: 40px;
     color: $white;
   }
+}
+
+#citacao2 {
+  text-align: center;
+  padding: 60px 300px;
 }
