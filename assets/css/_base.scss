@@ -91,6 +91,10 @@ img {
 .aspas {
   font-size: 300px;
   color: $grey-dark;
+  position: absolute;
+  z-index: -1;
+  top: 1rem;
+  left: -2rem;
 }
 
 .flex-center {
@@ -98,4 +102,16 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }

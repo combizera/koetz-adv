@@ -51,7 +51,7 @@
   // H6
   @else if $size == h6 and $device == desktop {
     font-size: 2.5rem;
-    line-height: 2rem;
+    line-height: 3rem;
   } @else if $size == h6 and $device == mobile {
     // font-size: 22px;
     // line-height: 120%;
@@ -59,8 +59,8 @@
 
   // p
   @else if $size == p and $device == desktop {
-    font-size: 18px;
-    line-height: 100%;
+    font-size: 20px;
+    line-height: 200%;
   } @else if $size == p and $device == mobile {
     // font-size: 18px;
     // line-height: 100%;
@@ -87,6 +87,8 @@ h1 {
 
 h2 {
   font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px 0 35px 0;
   @include typeface-1(h2, desktop);
   @include responsive(s) {
     @include typeface-1(h2, mobile);
@@ -119,6 +121,8 @@ h5 {
 
 h6 {
   font-weight: 700;
+  position: relative;
+  z-index: 10;
   @include typeface-1(h6, desktop);
   @include responsive(s) {
     @include typeface-1(h6, mobile);
@@ -127,6 +131,7 @@ h6 {
 
 p {
   font-weight: 400;
+  color: $grey-normal;
   @include typeface-1(p, desktop);
   @include responsive(s) {
     @include typeface-1(p, mobile);
@@ -164,5 +169,12 @@ a {
     &:after {
       margin-left: 1rem;
     }
+  }
+}
+
+.secao-tit {
+  p {
+    font-size: 30px;
+    line-height: 100%;
   }
 }

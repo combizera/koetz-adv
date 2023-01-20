@@ -55,6 +55,10 @@ img {
 .aspas {
   font-size: 300px;
   color: #202020;
+  position: absolute;
+  z-index: -1;
+  top: 1rem;
+  left: -2rem;
 }
 
 .flex-center {
@@ -62,6 +66,18 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }
 
 h1 {
@@ -79,6 +95,8 @@ h1 {
 
 h2 {
   font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px 0 35px 0;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 2.125rem;
   line-height: 2.625rem;
@@ -127,9 +145,11 @@ h5 {
 
 h6 {
   font-weight: 700;
+  position: relative;
+  z-index: 10;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 2.5rem;
-  line-height: 2rem;
+  line-height: 3rem;
 }
 @media screen and (max-width: 960px) {
   h6 {
@@ -139,9 +159,10 @@ h6 {
 
 p {
   font-weight: 400;
+  color: #575757;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 18px;
-  line-height: 100%;
+  font-size: 20px;
+  line-height: 200%;
 }
 @media screen and (max-width: 960px) {
   p {
@@ -184,6 +205,11 @@ a {
 }
 .btn-pri:hover:after {
   margin-left: 1rem;
+}
+
+.secao-tit p {
+  font-size: 30px;
+  line-height: 100%;
 }
 
 #header {
@@ -238,7 +264,7 @@ a {
 .citacao {
   flex-direction: row;
   color: #fff;
-  padding: 20px;
+  padding: 20px 200px;
 }
 .citacao img {
   max-width: 350px;
@@ -249,11 +275,10 @@ a {
   color: #fff;
 }
 
-.areas-cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+.solucoes-container {
+  align-items: center;
 }
+
 .areas-cards .area-card {
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
   padding: 30px;
