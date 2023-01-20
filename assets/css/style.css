@@ -245,6 +245,67 @@ a {
   display: none;
 }
 
+#footer {
+  padding: 120px 60px 40px 60px;
+}
+#footer p {
+  font-size: 16px;
+  line-height: 140%;
+}
+#footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#footer a {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #575757;
+  font-size: 14px;
+}
+#footer a:hover {
+  text-decoration: underline;
+}
+#footer .grid-4 {
+  gap: 60px;
+}
+#footer .footer-tit {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #202020;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+#footer .footer-logo img {
+  margin-bottom: 30px;
+}
+#footer .footer-dados {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #efefef;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+#footer .footer-dados p {
+  font-size: 14px;
+}
+#footer .footer-sociais ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 0px;
+  margin-bottom: 40px;
+}
+#footer .footer-sociais a {
+  transition: 0.3s ease;
+}
+#footer .footer-sociais a:hover {
+  opacity: 0.5;
+}
+
 .hero {
   background-image: url("./../img/banner.webp");
   background-size: cover;
