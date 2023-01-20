@@ -1,14 +1,24 @@
+.equipe-card {
+  position: relative;
+  img {
+    z-index: -2;
+  }
+}
 .equipe-nome {
+  position: absolute;
+  left: 0;
+  bottom: 60px;
   p {
     color: $white;
     font-size: 30px;
   }
-  &::before {
-    content: "";
+  .box-red {
     width: 110px;
     height: 110px;
     background-color: $red;
-    position: absolute;
-    z-index: -1;
   }
+}
+
+.equipe-hidden {
+  display: none;
 }

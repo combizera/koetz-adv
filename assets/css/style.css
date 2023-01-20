@@ -76,6 +76,12 @@ img {
   gap: 30px;
 }
 
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+
 h1 {
   text-align: center;
   font-weight: 700;
@@ -284,6 +290,10 @@ a {
   align-items: center;
 }
 
+#solucoes .secao-tit {
+  text-align: left !important;
+}
+
 .areas-cards a {
   text-decoration: none;
   color: inherit;
@@ -340,15 +350,28 @@ a {
   color: #fff;
 }
 
+.equipe-card {
+  position: relative;
+}
+.equipe-card img {
+  z-index: -2;
+}
+
+.equipe-nome {
+  position: absolute;
+  left: 0;
+  bottom: 60px;
+}
 .equipe-nome p {
   color: #fff;
   font-size: 30px;
 }
-.equipe-nome::before {
-  content: "";
+.equipe-nome .box-red {
   width: 110px;
   height: 110px;
   background-color: #c20000;
-  position: absolute;
-  z-index: -1;
+}
+
+.equipe-hidden {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
