@@ -1,0 +1,14 @@
+.equipe-nome {
+  p {
+    color: $white;
+    font-size: 30px;
+  }
+  &::before {
+    content: "";
+    width: 110px;
+    height: 110px;
+    background-color: $red;
+    position: absolute;
+    z-index: -1;
+  }
+}

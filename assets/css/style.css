@@ -338,4 +338,17 @@ a {
 .areas-cards .area-card4:hover {
   background-image: url("./../img/legalizacao_vermelho_2_card.webp");
   color: #fff;
+}
+
+.equipe-nome p {
+  color: #fff;
+  font-size: 30px;
+}
+.equipe-nome::before {
+  content: "";
+  width: 110px;
+  height: 110px;
+  background-color: #c20000;
+  position: absolute;
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */
