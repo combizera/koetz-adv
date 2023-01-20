@@ -306,6 +306,10 @@ a {
   opacity: 0.5;
 }
 
+#na-midia .midia-cards {
+  padding-top: 60px;
+}
+
 .hero {
   background-image: url("./../img/banner.webp");
   background-size: cover;
@@ -453,4 +457,19 @@ a {
 
 .cta-email {
   display: flex;
+}
+
+#home-blog .blog-card {
+  position: relative;
+}
+#home-blog .blog-card p {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-weight: 700;
+  line-height: 120%;
+  color: #fff;
+}
+#home-blog .btn {
+  margin-top: 60px;
 }/*# sourceMappingURL=style.css.map */
