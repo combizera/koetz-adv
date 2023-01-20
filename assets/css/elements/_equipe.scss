@@ -1,16 +1,33 @@
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+
 .equipe-card {
   position: relative;
   img {
     z-index: -2;
   }
+  &:hover {
+    .equipe-hidden {
+      display: block;
+    }
+  }
 }
 .equipe-nome {
-  position: absolute;
+  position: relative;
   left: 0;
-  bottom: 60px;
+  bottom: 170px;
+  transform: rotateZ(-90deg) translateY(-50%);
   p {
     color: $white;
     font-size: 30px;
+    z-index: 10;
+    position: absolute;
+    left: 10px;
+    bottom: 50%;
+    transform: translateY(50%);
   }
   .box-red {
     width: 110px;

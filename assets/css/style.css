@@ -76,12 +76,6 @@ img {
   gap: 30px;
 }
 
-.grid-5 {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 30px;
-}
-
 h1 {
   text-align: center;
   font-weight: 700;
@@ -199,7 +193,7 @@ a {
   transition: all 0.5 ease;
 }
 .btn-pri:after {
-  content: "➙";
+  content: "➞";
   margin-left: 10px;
 }
 .btn-pri:hover {
@@ -350,21 +344,36 @@ a {
   color: #fff;
 }
 
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+
 .equipe-card {
   position: relative;
 }
 .equipe-card img {
   z-index: -2;
 }
+.equipe-card:hover .equipe-hidden {
+  display: block;
+}
 
 .equipe-nome {
-  position: absolute;
+  position: relative;
   left: 0;
-  bottom: 60px;
+  bottom: 170px;
+  transform: rotateZ(-90deg) translateY(-50%);
 }
 .equipe-nome p {
   color: #fff;
   font-size: 30px;
+  z-index: 10;
+  position: absolute;
+  left: 10px;
+  bottom: 50%;
+  transform: translateY(50%);
 }
 .equipe-nome .box-red {
   width: 110px;
