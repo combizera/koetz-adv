@@ -204,8 +204,29 @@ a {
   margin-left: 1rem;
 }
 
+.btn-sec {
+  background-color: #c20000;
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif !important;
+  font-size: 1.25rem;
+  transition: 0.5 ease !important;
+}
+.btn-sec:after {
+  content: "➞";
+  margin-left: 10px;
+}
+.btn-sec:hover {
+  background-color: #202020;
+  border: 2px solid #202020;
+  color: #fff;
+}
+.btn-sec:hover:after {
+  margin-left: 1rem;
+}
+
 .secao-tit {
   text-align: center;
+  width: 70%;
 }
 .secao-tit p {
   font-size: 30px;
@@ -304,6 +325,15 @@ a {
 }
 #footer .footer-sociais a:hover {
   opacity: 0.5;
+}
+
+#cta-email {
+  background-image: url("./../img/banner_cta.webp");
+  padding: 100px 60px;
+}
+
+.cta-email {
+  display: flex;
 }
 
 #na-midia .midia-cards {
@@ -450,17 +480,16 @@ a {
   display: none;
 }
 
-#cta-email {
-  background-image: url("./../img/banner_cta.webp");
-  padding: 100px 60px;
-}
-
-.cta-email {
-  display: flex;
-}
-
 #home-blog .blog-card {
   position: relative;
+}
+#home-blog .blog-card::before {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.67) 100%);
 }
 #home-blog .blog-card p {
   position: absolute;
