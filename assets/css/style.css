@@ -364,9 +364,54 @@ a {
   background-image: url("./../img/banner_cta.webp");
   padding: 100px 60px;
 }
-
-.cta-email {
-  display: flex;
+#cta-email .cta-email {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#cta-email .form-base {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+#cta-email .input-box {
+  position: relative;
+  margin-top: 40px;
+}
+#cta-email label {
+  color: #575757;
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  pointer-events: none;
+  transition: 0.3s;
+  color: #202020;
+}
+#cta-email input,
+#cta-email textarea {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #202020;
+  outline: none;
+  color: #202020;
+}
+#cta-email input:focus ~ label,
+#cta-email textarea:focus ~ label {
+  top: -20px;
+  font-size: 12px;
+  color: #575757;
+}
+#cta-email input:valid ~ label,
+#cta-email textarea:valid ~ label {
+  top: -20px;
+  font-size: 12px;
+  color: #575757;
+}
+#cta-email [type=submit] {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
 }
 
 #na-midia .midia-cards {
