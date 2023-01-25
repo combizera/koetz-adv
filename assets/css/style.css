@@ -327,6 +327,39 @@ a {
   opacity: 0.5;
 }
 
+.modal-sucess {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: none;
+  color: #222;
+}
+
+.modal-content {
+  background-color: #fff;
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.modal-content h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.modal-sucess.active {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
 #cta-email {
   background-image: url("./../img/banner_cta.webp");
   padding: 100px 60px;
@@ -338,6 +371,17 @@ a {
 
 #na-midia .midia-cards {
   padding-top: 60px;
+}
+#na-midia .midia-cards img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s;
+  filter: grayscale(100%);
+  filter: gray;
+}
+#na-midia .midia-cards img:hover {
+  filter: none;
 }
 
 .hero {
