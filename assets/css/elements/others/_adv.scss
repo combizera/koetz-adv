@@ -1,3 +1,47 @@
-.adv-box {
-  display: block !important;
+.equipe-nav {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    li {
+      &.active {
+        border: 2px solid $red;
+        a {
+          color: $grey-dark !important;
+          font-weight: 700;
+        }
+      }
+    }
+
+    a {
+      color: $grey-normal;
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+    }
+  }
+}
+
+.equipe-txt {
+  margin-top: 40px;
+
+  .equipe-txt-card {
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+  }
+  .equipe-txt-adv {
+    background-color: $white;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%);
+    // margin-top: -40px;
+    transition: all 0.3s;
+  }
 }
