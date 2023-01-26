@@ -111,3 +111,10 @@ img {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
+
+.pagination {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $grey-normal;
+  padding: 40px;
+}

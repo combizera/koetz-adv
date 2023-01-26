@@ -76,8 +76,216 @@ img {
   gap: 30px;
 }
 
+.pagination {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #575757;
+  padding: 40px;
+}
+
+#cta-email {
+  background-image: url("./../img/banner_cta.webp");
+  padding: 100px 60px;
+}
+#cta-email .cta-email {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#cta-email .form-base {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+#cta-email .input-box {
+  position: relative;
+  margin-top: 40px;
+}
+#cta-email label {
+  color: #575757;
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  pointer-events: none;
+  transition: 0.3s;
+  color: #202020;
+}
+#cta-email input,
+#cta-email textarea {
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #202020;
+  outline: none;
+  color: #202020;
+}
+#cta-email input:focus ~ label,
+#cta-email textarea:focus ~ label {
+  top: -20px;
+  font-size: 12px;
+  color: #575757;
+}
+#cta-email input:valid ~ label,
+#cta-email textarea:valid ~ label {
+  top: -20px;
+  font-size: 12px;
+  color: #575757;
+}
+#cta-email [type=submit] {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#footer {
+  padding: 120px 60px 40px 60px;
+}
+#footer p {
+  font-size: 16px;
+  line-height: 140%;
+}
+#footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#footer a {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #575757;
+  font-size: 14px;
+}
+#footer a:hover {
+  text-decoration: underline;
+}
+#footer .grid-4 {
+  gap: 60px;
+}
+#footer .footer-tit {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #202020;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+#footer .footer-logo img {
+  margin-bottom: 30px;
+}
+#footer .footer-dados {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #efefef;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+#footer .footer-dados p {
+  font-size: 14px;
+}
+#footer .footer-sociais ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 0px;
+  margin-bottom: 40px;
+}
+#footer .footer-sociais a {
+  transition: 0.3s ease;
+}
+#footer .footer-sociais a:hover {
+  opacity: 0.5;
+}
+
+.modal-sucess {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: none;
+  color: #222;
+}
+
+.modal-content {
+  background-color: #fff;
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.modal-content h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.modal-sucess.active {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+#header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
+}
+#header .lang {
+  display: flex;
+  justify-content: end;
+  gap: 5px;
+}
+#header .lang button {
+  border: none;
+  padding: 5px 8px;
+  background-color: #fff;
+  font-family: "Source Sans Pro", sans-serif !important;
+  cursor: pointer;
+}
+#header .lang .lang-active {
+  border: 2px solid #c20000;
+}
+#header .header-main {
+  display: flex;
+  justify-content: space-between;
+}
+#header .header-main ul {
+  list-style: none;
+}
+#header .header-icons {
+  display: none;
+}
+
+.hero {
+  background-image: url("./../img/banner.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100%;
+  height: 100vh;
+}
+.hero .hero-txt a {
+  margin-top: 40px;
+}
+
+#beneficios-e-previdencias .hero {
+  background-image: url("./../img/banner.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
 h1 {
   text-align: center;
+  text-transform: uppercase;
   font-weight: 700;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 3.75rem;
@@ -233,133 +441,6 @@ a {
   line-height: 100%;
 }
 
-#header {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  right: 50%;
-  transform: translateX(50%);
-}
-#header .lang {
-  display: flex;
-  justify-content: end;
-  gap: 5px;
-}
-#header .lang button {
-  border: none;
-  padding: 5px 8px;
-  background-color: #fff;
-  font-family: "Source Sans Pro", sans-serif !important;
-  cursor: pointer;
-}
-#header .lang .lang-active {
-  border: 2px solid #c20000;
-}
-#header .header-main {
-  display: flex;
-  justify-content: space-between;
-}
-#header .header-main ul {
-  list-style: none;
-}
-#header .header-icons {
-  display: none;
-}
-
-#footer {
-  padding: 120px 60px 40px 60px;
-}
-#footer p {
-  font-size: 16px;
-  line-height: 140%;
-}
-#footer ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-#footer a {
-  color: inherit;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #575757;
-  font-size: 14px;
-}
-#footer a:hover {
-  text-decoration: underline;
-}
-#footer .grid-4 {
-  gap: 60px;
-}
-#footer .footer-tit {
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 2rem;
-  color: #202020;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-#footer .footer-logo img {
-  margin-bottom: 30px;
-}
-#footer .footer-dados {
-  display: flex;
-  justify-content: space-between;
-  border-top: 1px solid #efefef;
-  padding-top: 1rem;
-  margin-top: 1rem;
-}
-#footer .footer-dados p {
-  font-size: 14px;
-}
-#footer .footer-sociais ul {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  gap: 0px;
-  margin-bottom: 40px;
-}
-#footer .footer-sociais a {
-  transition: 0.3s ease;
-}
-#footer .footer-sociais a:hover {
-  opacity: 0.5;
-}
-
-.modal-sucess {
-  position: absolute;
-  height: 100vh;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  top: 0;
-  right: 0;
-  z-index: 1000;
-  display: none;
-  color: #222;
-}
-
-.modal-content {
-  background-color: #fff;
-  width: 50%;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-}
-
-.modal-content h3 {
-  font-size: 24px;
-  font-weight: 700;
-}
-
-.modal-sucess.active {
-  display: flex;
-  justify-content: flex-end;
-  align-items: stretch;
-}
-
 #cta-email {
   background-image: url("./../img/banner_cta.webp");
   padding: 100px 60px;
@@ -427,18 +508,6 @@ a {
 }
 #na-midia .midia-cards img:hover {
   filter: none;
-}
-
-.hero {
-  background-image: url("./../img/banner.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  width: 100%;
-  height: 100vh;
-}
-.hero .hero-txt a {
-  margin-top: 40px;
 }
 
 .bg-red {

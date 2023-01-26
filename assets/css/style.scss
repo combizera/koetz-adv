@@ -1,10 +1,11 @@
 @import "./base";
-@import "./elements/typo";
-@import "./elements/header";
-@import "./elements/footer";
-@import "./elements/cta-email";
+@import "./elements/base/cta-email";
+@import "./elements/base/footer";
+@import "./elements/base/header";
+@import "./elements/base/hero";
+@import "./elements/base/typo";
+@import "./elements/base/cta-email";
 @import "./elements/home/midia";
-@import "./elements/home/hero";
 @import "./elements/home/article";
 @import "./elements/home/solucoes";
 @import "./elements/home/areas-atuacao";

@@ -78,6 +78,7 @@
 
 h1 {
   text-align: center;
+  text-transform: uppercase;
   font-weight: 700;
   @include typeface-1(h1, desktop);
   @include responsive(s) {
