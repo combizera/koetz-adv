@@ -737,6 +737,16 @@ a {
   position: relative;
   height: 350px;
   overflow: hidden;
+  transition: all 0.3s;
+}
+.equipe-txt .equipe-txt-card:hover .equipe-txt-adv {
+  transform: translateX(-50%) translateY(0px);
+}
+.equipe-txt .equipe-txt-card:hover .equipe-txt-hidden {
+  display: block;
+}
+.equipe-txt .equipe-txt-card img {
+  height: 350px;
 }
 .equipe-txt .equipe-txt-adv {
   background-color: #fff;
@@ -744,6 +754,27 @@ a {
   bottom: 0;
   left: 50%;
   width: 90%;
-  transform: translateX(-50%);
-  transition: all 0.3s;
+  transform: translateX(-50%) translateY(40px);
+  margin-top: -40px;
+  padding: 20px 20px 60px 20px;
+}
+.equipe-txt .equipe-txt-cat {
+  font-size: 12px;
+  line-height: 100%;
+}
+.equipe-txt .equipe-txt-nome {
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 700;
+}
+.equipe-txt .equipe-txt-desc {
+  font-size: 12px;
+  line-height: 140%;
+}
+.equipe-txt .equipe-txt-oab {
+  font-size: 14px;
+  line-height: 140%;
+}
+.equipe-txt .equipe-txt-hidden {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

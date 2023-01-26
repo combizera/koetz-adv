@@ -33,6 +33,20 @@
     position: relative;
     height: 350px;
     overflow: hidden;
+    transition: all 0.3s;
+
+    &:hover {
+      .equipe-txt-adv {
+        transform: translateX(-50%) translateY(00px);
+      }
+
+      .equipe-txt-hidden {
+        display: block;
+      }
+    }
+    img {
+      height: 350px;
+    }
   }
   .equipe-txt-adv {
     background-color: $white;
@@ -40,8 +54,33 @@
     bottom: 0;
     left: 50%;
     width: 90%;
-    transform: translateX(-50%);
-    // margin-top: -40px;
-    transition: all 0.3s;
+    transform: translateX(-50%) translateY(40px);
+    margin-top: -40px;
+    padding: 20px 20px 60px 20px;
+  }
+
+  .equipe-txt-cat {
+    font-size: 12px;
+    line-height: 100%;
+  }
+
+  .equipe-txt-nome {
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 700;
+  }
+
+  .equipe-txt-desc {
+    font-size: 12px;
+    line-height: 140%;
+  }
+
+  .equipe-txt-oab {
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .equipe-txt-hidden {
+    display: none;
   }
 }
