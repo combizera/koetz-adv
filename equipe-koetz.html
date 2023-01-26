@@ -4,14 +4,18 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- Descrição do site -->
   <meta name="description" content="A Koetz Advocacia é formada por uma equipe de advogados especializados em Direito Previdenciário, Migratório, Tributário e Internacional.">
+
   <!-- Estilos -->
   <link rel="stylesheet" href="./assets/css/style.css">
+
   <!-- Tipografia -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+
   <!-- Título -->
   <title>Koetz Advocacia | Direito Internacional e Previdenciário</title>
 </head>
@@ -66,32 +70,32 @@
       </div>
     </section>
 
-    <!-- BLOG -->
-    <section id="home-blog" class="home-blog container secao flex-center">
-      <div class="secao-tit">
-        <p>Posts Relacionados</p>
-        <h2>Aposentadorias<span class="txt-red"> Gerais</span></h2>
+    <!-- NOSSA EQUIPE -->
+    <section class="adv container">
+      <div class="pagination">Home / <strong>Nossa Equipe</strong></div>
+      <div class="adv-box secao">
+        <nav class="adv-nav js-tabmenu">
+          <ul>
+            <li class="active"><a href="#">SÓCIOS</a></li>
+            <li><a href="#">ADVOGADOS ASSOCIADOS</a></li>
+            <li><a href="#">ADMINISTRATIVO</a></li>
+            <li><a href="#">ASSISTENTES JURÍDICOS</a></li>
+            <li><a href="#">COMUNICAÇÃO</a></li>
+          </ul>
+        </nav>
+
+        <nav class="adv-txt js-tabcontent">
+          <div>
+            <img src="" alt="">
+            <div class="adv-txt-card">
+              <p>Advogado Associado</p>
+              <p>Isabella Almeida</p>
+            </div>
+          </div>
+        </nav>
       </div>
-      <div class="grid-4">
-        <a href="#" class="blog-card">
-          <img src="./assets/img/post1.png" alt="Postagem 1">
-          <p>Visto Mercosul no Brasil: isenções, regras, residência e mais.</p>
-        </a>
-        <a href="#" class="blog-card">
-          <img src="./assets/img/post2.png" alt="Postagem 2">
-          <p>Aposentados do INSS: direitos, atrasados e revisão de benefício.</p>
-        </a>
-        <a href="#" class="blog-card">
-          <img src="./assets/img/post3.png" alt="Postagem 3">
-          <p>Aposentadoria Rural hoje: quais os requisitos do INSS?</p>
-        </a>
-        <a href="#" class="blog-card">
-          <img src="./assets/img/post4.png" alt="Postagem 4">
-          <p>Revisão do Artigo 29: aposentadoria por invalidez e auxílio…</p>
-        </a>
-      </div>
-      <a href="#" class="btn btn-pri">Ver mais posts</a>
     </section>
+
 
     <!-- CTA EMAIL -->
     <article id="cta-email">
@@ -101,14 +105,22 @@
           <p>Insira seus dados ao lado e entraremos em contato com você.</p>
         </div>
         <div class="cta-email-form">
-          <form action="GET">
-            <label for="">Nome Completo</label>
-            <input type="text">
-            <label for="">Email</label>
-            <input type="email">
-            <label for="">Assunto</label>
-            <input type="email">
-            <button type="submit">Entre em contato</button>
+          <form action="#">
+            <div class="form-base">
+              <div class="input-box">
+                <input id="name" name="name" type="text" required>
+                <label for="name">Nome Completo</label>
+              </div>
+              <div class="input-box">
+                <input id="email" name="email" type="email" required>
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="input-box">
+              <textarea name="subject" id="subject" rows="1" required></textarea>
+              <label for="subject">Assunto</label>
+            </div>
+            <button class="btn btn-sec" type="submit">Entre em contato</button>
           </form>
         </div>
       </div>
