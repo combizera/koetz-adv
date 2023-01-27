@@ -278,8 +278,108 @@ img {
 #header .header-main ul {
   list-style: none;
 }
-#header .header-icons {
+#header .header-icones {
+  display: flex;
+  align-items: center;
+}
+
+.hamburguer {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-top: 3px solid #202020;
+  width: 30px;
+  margin-left: 1rem;
+  border-radius: 1px;
+}
+
+.hamburguer::after,
+.hamburguer::before,
+.hamburguer-fechar::after,
+.hamburguer-fechar::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #202020;
+  margin-top: 5px;
+  transition: 0.3s;
+  position: relative;
+}
+
+.hamburguer-fechar {
+  display: block;
+  cursor: pointer;
+  border: none;
+  border-top: 3px solid #fff;
+  width: 30px;
+  margin-left: 1rem;
+  border-radius: 1px;
+  position: absolute;
+  top: 60px;
+  left: 60px;
+}
+
+.hamburguer-fechar::after {
+  transform: rotate(-135deg);
+  top: -7px;
+  background-color: #fff;
+}
+
+.hamburguer-fechar::before {
+  transform: rotate(135deg);
+  background-color: #fff;
+}
+
+@-webkit-keyframes show-modal {
+  from {
+    transform: translate3d(500px, 0px, 0);
+  }
+  to {
+    transform: translate3d(0, 0px, 0);
+  }
+}
+
+@keyframes show-modal {
+  from {
+    transform: translate3d(500px, 0px, 0);
+  }
+  to {
+    transform: translate3d(0, 0px, 0);
+  }
+}
+[data-modal-menu=container] {
+  -webkit-animation: show-modal 0.5s forwards;
+          animation: show-modal 0.5s forwards;
   display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(46, 46, 46, 0.96);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 40%;
+  z-index: 2000;
+}
+[data-modal-menu=container] ul {
+  list-style: none;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+}
+[data-modal-menu=container] a {
+  color: #efefef;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+[data-modal-menu=container] .header-modal-sociais {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-modal.active {
+  display: flex;
 }
 
 .hero {

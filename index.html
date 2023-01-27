@@ -31,28 +31,10 @@
       <div class="header-logo"><a href="#">
           <img src="./assets/img/icons/logo.png" alt="Logotipo Koetz Advocacia"></a>
       </div>
-      <div class="header-icons">
-        <a href=""></a><img src="./assets/img/icons/pesquisar.svg" alt="Ícone de Pesquisa">
-        <nav>
-          <button class="hamburguer"></button>
-          <ul>
-            <li>Home</li>
-            <li>Blog</li>
-            <li>Benefícios & Previdência</li>
-            <li>Tributos Pessoais</li>
-            <li>Trabalho e Migração</li>
-            <li>Legalização do Estrangeiro</li>
-            <li>
-              <ul>
-                <li><a href="#"><img src="./assets/img/icons/facebook.svg" alt="Ícone do Facebook da Koetz Advocacia"></a></li>
-                <li><a href="#"><img src="./assets/img/icons/instagram.svg" alt="Ícone do Instagram da Koetz Advocacia"></a></li>
-                <li><a href="#"><img src="./assets/img/icons/linkedin.svg" alt="Ícone do Linkedin da Koetz Advocacia"></a></li>
-                <li><a href="#"><img src="./assets/img/icons/twitter.svg" alt="Ícone do Twitter da Koetz Advocacia"></a></li>
-                <li><a href="#"><img src="./assets/img/icons/youtube.svg" alt="Ícone do Youtube da Koetz Advocacia"></a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
+
+      <div class="header-icones">
+        <a href="#"></a><img src="./assets/img/icons/pesquisar.png" alt="Ícone de Pesquisa">
+        <button class="hamburguer" data-modal-menu="abrir"></button>
       </div>
     </div>
   </header>
@@ -358,6 +340,28 @@
       </div>
     </article>
 
+    <!-- MODAL MENU -->
+    <nav class="header-modal" data-modal-menu="container">
+      <button class="hamburguer-fechar" data-modal-menu="fechar"></button>
+      <ul>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="beneficios-e-previdencias.html">Benefícios & Previdência</a></li>
+        <li><a href="#">Tributos Pessoais</a></li>
+        <li><a href="#">Trabalho e Migração</a></li>
+        <li><a href="#">Legalização do Estrangeiro</a></li>
+        <li>
+          <ul class="header-modal-sociais">
+            <li><a href="#"><img src="./assets/img/icons/facebook.svg" alt="Ícone do Facebook da Koetz Advocacia"></a></li>
+            <li><a href="#"><img src="./assets/img/icons/instagram.svg" alt="Ícone do Instagram da Koetz Advocacia"></a></li>
+            <li><a href="#"><img src="./assets/img/icons/linkedin.svg" alt="Ícone do Linkedin da Koetz Advocacia"></a></li>
+            <li><a href="#"><img src="./assets/img/icons/twitter.svg" alt="Ícone do Twitter da Koetz Advocacia"></a></li>
+            <li><a href="#"><img src="./assets/img/icons/youtube.svg" alt="Ícone do Youtube da Koetz Advocacia"></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
   </main>
 
   <!-- FOOTER -->
@@ -423,6 +427,8 @@
       <p>Todos os Direitos Reservados</p>
     </div>
   </footer>
+
+  <script type="module" src="./assets/js/script.js"></script>
 </body>
 
 </html>
