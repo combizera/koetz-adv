@@ -777,4 +777,36 @@ a {
 }
 .equipe-txt .equipe-txt-hidden {
   display: none;
+}
+
+.js-tabcontent article {
+  display: none;
+}
+
+.js-tabcontent article.active {
+  display: grid;
+  -webkit-animation: showEquipe 0.5s forwards;
+          animation: showEquipe 0.5s forwards;
+}
+
+@-webkit-keyframes showEquipe {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes showEquipe {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }/*# sourceMappingURL=style.css.map */
