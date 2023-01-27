@@ -83,6 +83,24 @@ img {
   padding: 40px;
 }
 
+.blog-grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+}
+
+.blog-main {
+  grid-column: span 4;
+  background-color: #c20000;
+  height: 500px;
+}
+
+.blog-aside {
+  height: 500px;
+  grid-column: span 2;
+  background-color: #078546;
+}
+
 #cta-email {
   background-image: url("./../img/banner_cta.webp");
   padding: 100px 60px;
@@ -410,6 +428,20 @@ a {
 }
 .btn-pri:hover:after {
   margin-left: 1rem;
+}
+
+.btn-pri-dark {
+  color: #fff;
+  border: 2px solid #fff;
+}
+.btn-pri-dark:after {
+  content: "➞";
+  margin-left: 10px;
+}
+.btn-pri-dark:hover {
+  background-color: #c20000;
+  border: 2px solid #c20000;
+  color: #fff;
 }
 
 .btn-sec {
@@ -809,4 +841,35 @@ a {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
+}
+#blog .hero {
+  background: none;
+  padding-top: 120px;
+  position: relative;
+}
+#blog .hero .blog-img {
+  position: relative;
+}
+#blog .hero .blog-img::before {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0) 0%, #000 100%);
+}
+#blog .hero-txt {
+  text-align: right;
+  padding: 60px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-30%);
+  right: 0;
+}
+#blog .hero-txt h1 {
+  text-align: right;
+}
+#blog .hero-txt h2 {
+  text-transform: capitalize;
 }/*# sourceMappingURL=style.css.map */

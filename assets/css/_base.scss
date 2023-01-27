@@ -118,3 +118,19 @@ img {
   color: $grey-normal;
   padding: 40px;
 }
+
+.blog-grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+}
+.blog-main {
+  grid-column: span 4;
+  background-color: #c20000;
+  height: 500px;
+}
+.blog-aside {
+  height: 500px;
+  grid-column: span 2;
+  background-color: #078546;
+}
