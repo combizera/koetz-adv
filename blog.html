@@ -159,8 +159,83 @@
 
       <!-- BLOG ASIDE -->
       <aside class="blog-aside">
-        <div class="blog-aside-busca">busca</div>
-      </aside>
+
+        <!-- CAMPO DE BUSCA -->
+        <div class="aside-card blog-aside-busca">busca</div>
+
+        <!-- CTA EMAIL  -->
+        <div class="aside-card blog-aside-email">
+          <p class="aside-tit">Deseja Falar com a nossa <span class="txt-red"> equipe</span>?</p>
+          <p>Preencha os dados abaixo para receber as informações de contato dos nossos advogados.</p>
+          <div class="form-base">
+            <form action="#">
+              <div class="form-base">
+                <div class="input-box">
+                  <input id="name" name="name" type="text" required>
+                  <label for="name">Nome *</label>
+                </div>
+                <div class="input-box">
+                  <input id="email" name="email" type="email" required>
+                  <label for="email">Email *</label>
+                </div>
+                <div class="input-box input-checkbox">
+                  <input type="checkbox" name="checkbox" id="checkbox" required>
+                  <label for="checkbox" name="checkbox">Eu concordo em receber informações via e-mail.</label>
+                </div>
+              </div>
+              <button class="btn btn-sec" type="submit">Solicitar Contato</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- POSTS POPULARES -->
+        <div class="aside-card blog-aside-posts">
+          <p class="aside-tit">Posts Populares</p>
+          <nav>
+            <ul>
+              <li>
+                <a class="blog-aside-post" href="#">
+                  <div>
+                    <img src="./assets/img/colaborador 1.png" alt="Post blog">
+                    <span class="aside-numero">1</span>
+                  </div>
+                  <div>
+                    <p class="aside-post-tit">CTC no INSS e RPPS - tudo sobre a Certidão de Nascimento</p>
+                    <span>2 de jan de 2023</span>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a class="blog-aside-post" href="#">
+                  <div>
+                    <img src="./assets/img/hero-blog.png" alt="Post blog">
+                    <span class="aside-numero">2</span>
+                  </div>
+                  <div>
+                    <p class="aside-post-tit">CTC no INSS e RPPS - tudo sobre a Certidão de Nascimento</p>
+                    <span>2 de jan de 2023</span>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a class="blog-aside-post" href="#">
+                  <div>
+                    <img src="./assets/img/colaborador 1.png" alt="Post blog">
+                    <span class="aside-numero">3</span>
+                  </div>
+                  <div>
+                    <p class="aside-post-tit">CTC no INSS e RPPS - tudo sobre a Certidão de Nascimento</p>
+                    <span>2 de jan de 2023</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+    </div>
+    </aside>
     </div>
 
   </main>

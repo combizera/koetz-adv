@@ -96,21 +96,27 @@ img {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
 }
-#cta-email .input-box {
+#cta-email [type=submit] {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.form-base .input-box {
   position: relative;
   margin-top: 40px;
 }
-#cta-email label {
+.form-base label {
   color: #575757;
   position: absolute;
   top: -10px;
   left: 0px;
   pointer-events: none;
   transition: 0.3s;
-  color: #202020;
 }
-#cta-email input,
-#cta-email textarea {
+.form-base input,
+.form-base textarea {
   width: 100%;
   background: none;
   border: none;
@@ -118,23 +124,17 @@ img {
   outline: none;
   color: #202020;
 }
-#cta-email input:focus ~ label,
-#cta-email textarea:focus ~ label {
+.form-base input:focus ~ label,
+.form-base textarea:focus ~ label {
   top: -20px;
   font-size: 12px;
   color: #575757;
 }
-#cta-email input:valid ~ label,
-#cta-email textarea:valid ~ label {
+.form-base input:valid ~ label,
+.form-base textarea:valid ~ label {
   top: -20px;
   font-size: 12px;
   color: #575757;
-}
-#cta-email [type=submit] {
-  margin-top: 20px;
-  width: 100%;
-  padding: 10px;
-  cursor: pointer;
 }
 
 #footer {
@@ -562,21 +562,27 @@ a {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
 }
-#cta-email .input-box {
+#cta-email [type=submit] {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.form-base .input-box {
   position: relative;
   margin-top: 40px;
 }
-#cta-email label {
+.form-base label {
   color: #575757;
   position: absolute;
   top: -10px;
   left: 0px;
   pointer-events: none;
   transition: 0.3s;
-  color: #202020;
 }
-#cta-email input,
-#cta-email textarea {
+.form-base input,
+.form-base textarea {
   width: 100%;
   background: none;
   border: none;
@@ -584,23 +590,17 @@ a {
   outline: none;
   color: #202020;
 }
-#cta-email input:focus ~ label,
-#cta-email textarea:focus ~ label {
+.form-base input:focus ~ label,
+.form-base textarea:focus ~ label {
   top: -20px;
   font-size: 12px;
   color: #575757;
 }
-#cta-email input:valid ~ label,
-#cta-email textarea:valid ~ label {
+.form-base input:valid ~ label,
+.form-base textarea:valid ~ label {
   top: -20px;
   font-size: 12px;
   color: #575757;
-}
-#cta-email [type=submit] {
-  margin-top: 20px;
-  width: 100%;
-  padding: 10px;
-  cursor: pointer;
 }
 
 #na-midia .midia-cards {
@@ -1018,4 +1018,96 @@ a {
 
 .blog-aside {
   grid-column: span 2;
+}
+.blog-aside .aside-card {
+  padding: 40px 20px;
+  border: 1px solid #aaa;
+  transition: 0.3s;
+  margin-bottom: 30px;
+}
+.blog-aside .aside-card:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.blog-aside .aside-tit {
+  font-size: 20px !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #202020;
+  margin-bottom: 20px;
+}
+.blog-aside .blog-aside-email p {
+  font-size: 1rem;
+}
+.blog-aside .blog-aside-email label {
+  font-size: 1rem;
+}
+.blog-aside .blog-aside-email button {
+  margin-top: 20px;
+  background-color: #fff;
+  color: #202020;
+  transition: 0.3s;
+}
+.blog-aside .blog-aside-email button:hover {
+  background-color: #c20000;
+  border: none;
+  color: #fff;
+}
+.blog-aside .blog-aside-email .input-checkbox {
+  display: flex;
+}
+.blog-aside .blog-aside-email .input-checkbox label {
+  position: unset;
+  font-size: 14px;
+  line-height: 100%;
+}
+.blog-aside .blog-aside-email .input-checkbox input {
+  width: 25px;
+  margin-right: 10px;
+}
+.blog-aside .blog-aside-posts ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.blog-aside .blog-aside-posts li {
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 20px;
+}
+.blog-aside .blog-aside-posts li:last-child {
+  border-bottom: none;
+  padding-bottom: 0px;
+}
+.blog-aside .blog-aside-posts a {
+  text-decoration: none;
+}
+.blog-aside .blog-aside-posts img {
+  width: 150px;
+  height: 85px;
+}
+.blog-aside .blog-aside-posts .blog-aside-post {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.blog-aside .blog-aside-posts .blog-aside-post span {
+  color: #575757;
+  font-size: 14px;
+}
+.blog-aside .blog-aside-posts .aside-numero {
+  background-color: #c20000;
+  padding: 10px;
+  line-height: 100%;
+  font-weight: 700;
+  color: #fff !important;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.blog-aside .blog-aside-posts .aside-post-tit {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  color: #202020;
+  padding-bottom: 5px;
 }/*# sourceMappingURL=style.css.map */
