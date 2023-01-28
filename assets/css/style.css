@@ -918,24 +918,24 @@ a {
     transform: translate3d(0, 0, 0);
   }
 }
-#blog ul {
+.blog ul {
   list-style: none;
 }
-#blog a {
+.blog a {
   text-decoration: none;
 }
-#blog main {
+.blog main {
   padding: 0 60px;
 }
-#blog .hero {
+.blog .hero {
   background: none;
   padding-top: 120px;
   position: relative;
 }
-#blog .hero .blog-img {
+.blog .hero .blog-img {
   position: relative;
 }
-#blog .hero .blog-img::before {
+.blog .hero .blog-img::before {
   content: "";
   display: block;
   position: absolute;
@@ -943,7 +943,7 @@ a {
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, #000 100%);
 }
-#blog .hero-txt {
+.blog .hero-txt {
   text-align: right;
   padding: 60px;
   color: #fff;
@@ -952,10 +952,10 @@ a {
   transform: translateY(-30%);
   right: 0;
 }
-#blog .hero-txt h1 {
+.blog .hero-txt h1 {
   text-align: right;
 }
-#blog .hero-txt h2 {
+.blog .hero-txt h2 {
   text-transform: capitalize;
 }
 
