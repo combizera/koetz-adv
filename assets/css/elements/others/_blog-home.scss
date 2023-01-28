@@ -1,4 +1,10 @@
 #blog {
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
   .hero {
     background: none;
     padding-top: 120px;
@@ -83,7 +89,6 @@
         margin-top: -5px;
       }
       ul {
-        list-style: none;
         display: flex;
         gap: 20px;
         align-items: center;
@@ -127,7 +132,11 @@
       margin-top: 20px;
       background-color: #fff;
       color: $grey-dark;
-      transition: 0.3s;
+      padding: 20px;
+      width: 100%;
+      &:after {
+        display: none;
+      }
       &:hover {
         background-color: $red;
         border: none;
@@ -149,7 +158,6 @@
   }
   .blog-aside-posts {
     ul {
-      list-style: none;
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -161,9 +169,6 @@
         border-bottom: none;
         padding-bottom: 0px;
       }
-    }
-    a {
-      text-decoration: none;
     }
     img {
       width: 150px;
@@ -194,6 +199,16 @@
       line-height: 1.25rem;
       color: $grey-dark;
       padding-bottom: 5px;
+    }
+  }
+  .blog-aside-category {
+    font-size: 1rem;
+    a {
+      display: flex;
+      justify-content: space-between;
+    }
+    .blog-aside-category-name {
+      color: $grey-dark;
     }
   }
 }

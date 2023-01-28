@@ -189,7 +189,7 @@ a {
   color: $white;
   font-family: "Source Sans Pro", sans-serif !important;
   font-size: 1.25rem;
-  transition: 0.5 ease !important;
+  transition: 0.3s ease;
   &:after {
     content: "➞";
     margin-left: 10px;

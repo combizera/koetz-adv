@@ -528,7 +528,7 @@ a {
   color: #fff;
   font-family: "Source Sans Pro", sans-serif !important;
   font-size: 1.25rem;
-  transition: 0.5 ease !important;
+  transition: 0.3s ease;
 }
 .btn-sec:after {
   content: "➞";
@@ -918,6 +918,12 @@ a {
     transform: translate3d(0, 0, 0);
   }
 }
+#blog ul {
+  list-style: none;
+}
+#blog a {
+  text-decoration: none;
+}
 #blog .hero {
   background: none;
   padding-top: 120px;
@@ -1003,7 +1009,6 @@ a {
   margin-top: -5px;
 }
 .blog-main .blog-post .blog-post-links ul {
-  list-style: none;
   display: flex;
   gap: 20px;
   align-items: center;
@@ -1045,7 +1050,11 @@ a {
   margin-top: 20px;
   background-color: #fff;
   color: #202020;
-  transition: 0.3s;
+  padding: 20px;
+  width: 100%;
+}
+.blog-aside .blog-aside-email button:after {
+  display: none;
 }
 .blog-aside .blog-aside-email button:hover {
   background-color: #c20000;
@@ -1065,7 +1074,6 @@ a {
   margin-right: 10px;
 }
 .blog-aside .blog-aside-posts ul {
-  list-style: none;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -1077,9 +1085,6 @@ a {
 .blog-aside .blog-aside-posts li:last-child {
   border-bottom: none;
   padding-bottom: 0px;
-}
-.blog-aside .blog-aside-posts a {
-  text-decoration: none;
 }
 .blog-aside .blog-aside-posts img {
   width: 150px;
@@ -1110,4 +1115,14 @@ a {
   line-height: 1.25rem;
   color: #202020;
   padding-bottom: 5px;
+}
+.blog-aside .blog-aside-category {
+  font-size: 1rem;
+}
+.blog-aside .blog-aside-category a {
+  display: flex;
+  justify-content: space-between;
+}
+.blog-aside .blog-aside-category .blog-aside-category-name {
+  color: #202020;
 }/*# sourceMappingURL=style.css.map */
