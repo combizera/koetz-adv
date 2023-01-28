@@ -924,6 +924,9 @@ a {
 #blog a {
   text-decoration: none;
 }
+#blog main {
+  padding: 0 60px;
+}
 #blog .hero {
   background: none;
   padding-top: 120px;

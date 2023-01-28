@@ -31,36 +31,18 @@
       <div class="header-logo"><a href="#">
           <img src="./assets/img/icons/logo.png" alt="Logotipo Koetz Advocacia"></a>
       </div>
-      <div class="header-modal">
-        <a href=""></a><img src="./assets/img/icons/pesquisar.svg" alt="Ícone de Pesquisa">
-        <nav>
-          <button class="hamburguer"></button>
-          <ul>
-            <li>Home</li>
-            <li>Blog</li>
-            <li>Benefícios & Previdência</li>
-            <li>Tributos Pessoais</li>
-            <li>Trabalho e Migração</li>
-            <li>Legalização do Estrangeiro</li>
-            <li>
-              <ul>
-                <li><a href="#"><img src="./assets/img/icons/facebook.svg" alt="Ícone do Facebook da Koetz Advocacia"></a></li>
-                <li><a href="#"><img src="./assets/img/icons/instagram.svg" alt="Ícone do Instagram da Koetz Advocacia"></a></li>
-                <li><a href="#"><img src="./assets/img/icons/linkedin.svg" alt="Ícone do Linkedin da Koetz Advocacia"></a></li>
-                <li><a href="#"><img src="./assets/img/icons/twitter.svg" alt="Ícone do Twitter da Koetz Advocacia"></a></li>
-                <li><a href="#"><img src="./assets/img/icons/youtube.svg" alt="Ícone do Youtube da Koetz Advocacia"></a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
+
+      <div class="header-icones">
+        <a href="#"></a><img src="./assets/img/icons/pesquisar.png" alt="Ícone de Pesquisa">
+        <button class="hamburguer" data-modal-menu="abrir"></button>
       </div>
     </div>
   </header>
 
   <!-- MAIN -->
-  <main>
+  <main class="container">
     <!-- HERO -->
-    <section class="hero container">
+    <section class="hero">
       <div class="blog-img">
         <img src="./assets/img/hero-blog.png" alt="Hero Blog">
       </div>
@@ -155,6 +137,8 @@
             <a href="#" class="btn btn-pri">Ler mais</a>
           </div>
         </div>
+
+        <div class="blog-pagination">Paginação</div>
       </section>
 
       <!-- BLOG ASIDE -->
@@ -250,7 +234,59 @@
     </aside>
     </div>
 
+    <!-- MODAL MENU -->
+    <nav class="header-modal" data-modal-menu="container">
+      <button class="hamburguer-fechar" data-modal-menu="fechar"></button>
+      <ul>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="beneficios-e-previdencias.html">Benefícios & Previdência</a></li>
+        <li><a href="#">Tributos Pessoais</a></li>
+        <li><a href="#">Trabalho e Migração</a></li>
+        <li><a href="#">Legalização do Estrangeiro</a></li>
+        <li>
+          <ul class="header-modal-sociais">
+            <li><a href="#"><img src="./assets/img/icons/facebook.svg" alt="Ícone do Facebook da Koetz Advocacia"></a></li>
+            <li><a href="#"><img src="./assets/img/icons/instagram.svg" alt="Ícone do Instagram da Koetz Advocacia"></a></li>
+            <li><a href="#"><img src="./assets/img/icons/linkedin.svg" alt="Ícone do Linkedin da Koetz Advocacia"></a></li>
+            <li><a href="#"><img src="./assets/img/icons/twitter.svg" alt="Ícone do Twitter da Koetz Advocacia"></a></li>
+            <li><a href="#"><img src="./assets/img/icons/youtube.svg" alt="Ícone do Youtube da Koetz Advocacia"></a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
   </main>
+
+
+  <!-- CTA EMAIL -->
+  <article id="cta-email">
+    <div class="cta-email container">
+      <div class="cta-email-txt">
+        <h2>Faremos mais que o possível para entregar os direitos aos nossos clientes, <span class="txt-red"> sempre</span>.</h2>
+        <p>Insira seus dados ao lado e entraremos em contato com você.</p>
+      </div>
+      <div class="cta-email-form">
+        <form action="#">
+          <div class="form-base">
+            <div class="input-box">
+              <input id="name" name="name" type="text" required>
+              <label for="name">Nome Completo</label>
+            </div>
+            <div class="input-box">
+              <input id="email" name="email" type="email" required>
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="input-box">
+            <textarea name="subject" id="subject" rows="1" required></textarea>
+            <label for="subject">Assunto</label>
+          </div>
+          <button class="btn btn-sec" type="submit">Entre em contato</button>
+        </form>
+      </div>
+    </div>
+  </article>
 
   <!-- FOOTER -->
   <footer id="footer" class="container">
@@ -315,6 +351,9 @@
       <p>Todos os Direitos Reservados</p>
     </div>
   </footer>
+
+  <!-- MEUS SCRIPTS -->
+  <script type="module" src="./assets/js/script.js"></script>
 </body>
 
 </html>
