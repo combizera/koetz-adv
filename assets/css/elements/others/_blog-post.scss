@@ -34,3 +34,21 @@
     }
   }
 }
+.blog-post-relacionados {
+  display: flex;
+  flex-direction: column;
+}
+.blog-post-relacionado-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  img {
+    max-height: 220px;
+  }
+  h3 {
+    text-transform: none;
+  }
+  p {
+    font-size: 1rem;
+  }
+}

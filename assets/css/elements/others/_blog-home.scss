@@ -67,17 +67,6 @@
     .blog-post-autor {
       gap: 20px;
       align-items: center;
-      p {
-        font-size: 1rem;
-      }
-      span {
-        content: "";
-        display: block;
-        width: 7px;
-        height: 7px;
-        border-radius: 8px;
-        background-color: $red;
-      }
     }
     h2 {
       text-transform: capitalize;
@@ -214,4 +203,18 @@
       color: $grey-dark;
     }
   }
+}
+
+// BASE BLOG
+.blog-data {
+  font-size: 1rem !important;
+}
+
+.red-ball {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  border-radius: 8px;
+  background-color: $red;
 }
