@@ -25,5 +25,4 @@ export default function modalMenu() {
     btnFecharMenu.addEventListener("click", fecharMenu);
     btnContainerMenu.addEventListener("click", clickOutMenu);
   }
-  console.log("oie");
 }
