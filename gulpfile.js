@@ -16,3 +16,11 @@ function compilaSass() {
 }
 
 gulp.task("sass", compilaSass);
+
+// Anotação mental, tarefa eu posso executar qnts eu quiser, função é apenas uma
+
+function watch() {
+  gulp.watch("assets/css/scss/**/**/*.scss", compilaSass);
+}
+
+gulp.task("default", watch);
