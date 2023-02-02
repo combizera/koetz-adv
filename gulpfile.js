@@ -4,7 +4,7 @@ const sass = require("gulp-sass")(require("sass"));
 function compilaSass() {
   return gulp
     .src("assets/css/scss/**/**/*.scss")
-    .pipe(sass())
+    .pipe(sass({ outputStyle: "compressed" }))
     .pipe(gulp.dest("assets/css/"));
 }
 
