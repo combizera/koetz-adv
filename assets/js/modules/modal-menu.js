@@ -1,4 +1,6 @@
 export default function modalMenu() {
+  console.log("oie");
+  console.log("xau");
   const btnAbrirMenu = document.querySelector('[data-modal-menu="abrir"]');
   const btnFecharMenu = document.querySelector('[data-modal-menu="fechar"]');
   const btnContainerMenu = document.querySelector(
