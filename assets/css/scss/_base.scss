@@ -60,7 +60,7 @@ body {
 .container {
   max-width: $container-xl;
   margin: 0 auto;
-  border: 2px solid green;
+  border: 2px solid tomato;
 
   @include responsive(s) {
     flex-direction: column;
