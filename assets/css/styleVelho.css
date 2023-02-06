@@ -84,7 +84,7 @@ img {
 }
 
 #cta-email {
-  background-image: url("./../img/banner_cta.webp");
+  background-image: url("assets/img/banner_cta.webp");
   padding: 100px 60px;
 }
 #cta-email .cta-email {
@@ -365,7 +365,7 @@ img {
 }
 
 .hero {
-  background-image: url("./../img/banner.webp");
+  background-image: url("assets/img/banner.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -377,7 +377,7 @@ img {
 }
 
 #beneficios-e-previdencias .hero {
-  background-image: url("./../img/banner.webp");
+  background-image: url("assets/img/banner.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -550,7 +550,7 @@ a {
 }
 
 #cta-email {
-  background-image: url("./../img/banner_cta.webp");
+  background-image: url("assets/img/banner_cta.webp");
   padding: 100px 60px;
 }
 #cta-email .cta-email {
@@ -673,35 +673,35 @@ a {
   color: #fff;
 }
 .areas-cards .area-card1 {
-  background-image: url("./../img/beneficios_prev_branco_card.webp");
+  background-image: url("assets/img/beneficios_prev_branco_card.webp");
   background-position: center;
 }
 .areas-cards .area-card1:hover {
-  background-image: url("./../img/beneficios_prev_vermelho_2_card.webp");
+  background-image: url("assets/img/beneficios_prev_vermelho_2_card.webp");
   color: #fff;
 }
 .areas-cards .area-card2 {
-  background-image: url("./../img/tributos_pessoais_branco_Card.webp");
+  background-image: url("assets/img/tributos_pessoais_branco_Card.webp");
   background-position: center;
 }
 .areas-cards .area-card2:hover {
-  background-image: url("./../img/tributos_pessoais_vermelho_Card.webp");
+  background-image: url("assets/img/tributos_pessoais_vermelho_Card.webp");
   color: #fff;
 }
 .areas-cards .area-card3 {
-  background-image: url("./../img/trabalho_migracao_branco_Card.webp");
+  background-image: url("assets/img/trabalho_migracao_branco_Card.webp");
   background-position: center;
 }
 .areas-cards .area-card3:hover {
-  background-image: url("./../img/trabalho_migracao_vermelho_2_Card.webp");
+  background-image: url("assets/img/trabalho_migracao_vermelho_2_Card.webp");
   color: #fff;
 }
 .areas-cards .area-card4 {
-  background-image: url("./../img/legalizacao_branco_card.webp");
+  background-image: url("assets/img/legalizacao_branco_card.webp");
   background-position: left;
 }
 .areas-cards .area-card4:hover {
-  background-image: url("./../img/legalizacao_vermelho_2_card.webp");
+  background-image: url("assets/img/legalizacao_vermelho_2_card.webp");
   color: #fff;
 }
 

@@ -1,50 +1,12 @@
-<html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Descrição do site -->
-  <meta name="description" content="A Koetz Advocacia é formada por uma equipe de advogados especializados em Direito Previdenciário, Migratório, Tributário e Internacional.">
-  <!-- Estilos -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <!-- Tipografia -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Título -->
-  <title>Koetz Advocacia | Direito Internacional e Previdenciário</title>
-</head>
-
-<!-- BODY -->
-
-<body id="blog-home" class="blog">
-
-  <!-- HEADER -->
-  <header id="header" class="container">
-    <div class="lang">
-      <button class="lang-active">PT</button>
-      <button>EN</button>
-      <button>ES</button>
-    </div>
-    <div class="header-main">
-      <div class="header-logo"><a href="#">
-          <img src="./assets/img/icons/logo.png" alt="Logotipo Koetz Advocacia"></a>
-      </div>
-
-      <div class="header-icones">
-        <a href="#"></a><img src="./assets/img/icons/pesquisar.png" alt="Ícone de Pesquisa">
-        <button class="hamburguer" data-modal-menu="abrir"></button>
-      </div>
-    </div>
-  </header>
+<!-- Para pegar o Header -->
+<?php get_header(); ?>
 
   <!-- MAIN -->
   <main class="container">
     <!-- HERO -->
     <section class="hero">
       <div class="blog-img">
-        <img src="./assets/img/hero-blog.png" alt="Hero Blog">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/hero-blog.png" alt="Hero Blog">
       </div>
       <div class="hero-txt">
         <h1>Tributos</h1>
@@ -58,10 +20,10 @@
       <!-- BLOG MAIN -->
       <section class="blog-main">
         <div class="blog-post">
-          <div class="blog-post-img"><img src="./assets/img/foto.png" alt="Postagem blog"></div>
+          <div class="blog-post-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/foto.png" alt="Postagem blog"></div>
           <p class="blog-post-category">Aposentadoria Especial do Servidor Público / Servidor Público / Servidores Concursados e Filiados ao INSS</p>
           <div class="blog-post-autor">
-            <img src="./assets/img/autor.png" alt="Autor">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/autor.png" alt="Autor">
             <p class="blog-data">Marcela Cunha</p>
             <span class="red-ball"></span>
             <p class="blog-data">2 de jan de 2023</p>
@@ -72,10 +34,10 @@
               <p>Compartilhar:
               <nav>
                 <ul>
-                  <li><a href="#"><img src="./assets/img/icons/facebook-dark.svg" alt="Ícone do Facebook"></a></li>
-                  <li><a href="#"><img src="./assets/img/icons/instagram-dark.svg" alt="Ícone do Instagram"></a></li>
-                  <li><a href="#"><img src="./assets/img/icons/linkedin-dark.svg" alt="Ícone do Linkedin"></a></li>
-                  <li><a href="#"><img src="./assets/img/icons/twitter-dark.svg" alt="Ícone do Twitter"></a></li>
+                  <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook-dark.svg" alt="Ícone do Facebook"></a></li>
+                  <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/instagram-dark.svg" alt="Ícone do Instagram"></a></li>
+                  <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/linkedin-dark.svg" alt="Ícone do Linkedin"></a></li>
+                  <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/twitter-dark.svg" alt="Ícone do Twitter"></a></li>
                 </ul>
               </nav>
               </p>
@@ -85,10 +47,10 @@
         </div>
 
         <div class="blog-post">
-          <div class="blog-post-img"><img src="./assets/img/foto.png" alt="Postagem blog"></div>
+          <div class="blog-post-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/foto.png" alt="Postagem blog"></div>
           <p class="blog-post-category">Aposentadoria Especial do Servidor Público / Servidor Público / Servidores Concursados e Filiados ao INSS</p>
           <div class="blog-post-autor">
-            <img src="./assets/img/autor.png" alt="Autor">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/autor.png" alt="Autor">
             <p class="blog-data">Marcela Cunha</p>
             <span class="red-ball"></span>
             <p class="blog-data">2 de jan de 2023</p>
@@ -99,10 +61,10 @@
               <p>Compartilhar:
               <nav>
                 <ul>
-                  <li><a href="#"><img src="./assets/img/icons/facebook-dark.svg" alt="Ícone do Facebook"></a></li>
-                  <li><a href="#"><img src="./assets/img/icons/instagram-dark.svg" alt="Ícone do Instagram"></a></li>
-                  <li><a href="#"><img src="./assets/img/icons/linkedin-dark.svg" alt="Ícone do Linkedin"></a></li>
-                  <li><a href="#"><img src="./assets/img/icons/twitter-dark.svg" alt="Ícone do Twitter"></a></li>
+                  <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook-dark.svg" alt="Ícone do Facebook"></a></li>
+                  <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/instagram-dark.svg" alt="Ícone do Instagram"></a></li>
+                  <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/linkedin-dark.svg" alt="Ícone do Linkedin"></a></li>
+                  <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/twitter-dark.svg" alt="Ícone do Twitter"></a></li>
                 </ul>
               </nav>
               </p>
@@ -112,10 +74,10 @@
         </div>
 
         <div class="blog-post">
-          <div class="blog-post-img"><img src="./assets/img/foto.png" alt="Postagem blog"></div>
+          <div class="blog-post-img"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/foto.png" alt="Postagem blog"></div>
           <p class="blog-post-category">Aposentadoria Especial do Servidor Público / Servidor Público / Servidores Concursados e Filiados ao INSS</p>
           <div class="blog-post-autor">
-            <img src="./assets/img/autor.png" alt="Autor">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/autor.png" alt="Autor">
             <p class="blog-data">Marcela Cunha</p>
             <span class="red-ball"></span>
             <p class="blog-data">2 de jan de 2023</p>
@@ -126,10 +88,10 @@
               <p>Compartilhar:
               <nav>
                 <ul>
-                  <li><a href="#"><img src="./assets/img/icons/facebook-dark.svg" alt="Ícone do Facebook"></a></li>
-                  <li><a href="#"><img src="./assets/img/icons/instagram-dark.svg" alt="Ícone do Instagram"></a></li>
-                  <li><a href="#"><img src="./assets/img/icons/linkedin-dark.svg" alt="Ícone do Linkedin"></a></li>
-                  <li><a href="#"><img src="./assets/img/icons/twitter-dark.svg" alt="Ícone do Twitter"></a></li>
+                  <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook-dark.svg" alt="Ícone do Facebook"></a></li>
+                  <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/instagram-dark.svg" alt="Ícone do Instagram"></a></li>
+                  <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/linkedin-dark.svg" alt="Ícone do Linkedin"></a></li>
+                  <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/twitter-dark.svg" alt="Ícone do Twitter"></a></li>
                 </ul>
               </nav>
               </p>
@@ -180,7 +142,7 @@
               <li>
                 <a class="blog-aside-post" href="#">
                   <div>
-                    <img src="./assets/img/colaborador 1.png" alt="Post blog">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/colaborador 1.png" alt="Post blog">
                     <span class="aside-numero">1</span>
                   </div>
                   <div>
@@ -192,7 +154,7 @@
               <li>
                 <a class="blog-aside-post" href="#">
                   <div>
-                    <img src="./assets/img/hero-blog.png" alt="Post blog">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/hero-blog.png" alt="Post blog">
                     <span class="aside-numero">2</span>
                   </div>
                   <div>
@@ -204,7 +166,7 @@
               <li>
                 <a class="blog-aside-post" href="#">
                   <div>
-                    <img src="./assets/img/colaborador 1.png" alt="Post blog">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/colaborador 1.png" alt="Post blog">
                     <span class="aside-numero">3</span>
                   </div>
                   <div>
@@ -245,18 +207,17 @@
         <li><a href="#">Legalização do Estrangeiro</a></li>
         <li>
           <ul class="header-modal-sociais">
-            <li><a href="#"><img src="./assets/img/icons/facebook.svg" alt="Ícone do Facebook da Koetz Advocacia"></a></li>
-            <li><a href="#"><img src="./assets/img/icons/instagram.svg" alt="Ícone do Instagram da Koetz Advocacia"></a></li>
-            <li><a href="#"><img src="./assets/img/icons/linkedin.svg" alt="Ícone do Linkedin da Koetz Advocacia"></a></li>
-            <li><a href="#"><img src="./assets/img/icons/twitter.svg" alt="Ícone do Twitter da Koetz Advocacia"></a></li>
-            <li><a href="#"><img src="./assets/img/icons/youtube.svg" alt="Ícone do Youtube da Koetz Advocacia"></a></li>
+            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook.svg" alt="Ícone do Facebook da Koetz Advocacia"></a></li>
+            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/instagram.svg" alt="Ícone do Instagram da Koetz Advocacia"></a></li>
+            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/linkedin.svg" alt="Ícone do Linkedin da Koetz Advocacia"></a></li>
+            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/twitter.svg" alt="Ícone do Twitter da Koetz Advocacia"></a></li>
+            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/youtube.svg" alt="Ícone do Youtube da Koetz Advocacia"></a></li>
           </ul>
         </li>
       </ul>
     </nav>
 
   </main>
-
 
   <!-- CTA EMAIL -->
   <article id="cta-email">
@@ -287,72 +248,5 @@
     </div>
   </article>
 
-  <!-- FOOTER -->
-  <footer id="footer" class="container">
-    <div class="grid-4">
-      <div class="footer-logo">
-        <img src="./assets/img/icons/logo.png" alt="Logotipo Koetz Advocacia">
-        <p>Nossos clientes em qualquer lugar do planeta tem acesso rápido às suas informações, mas de maneira segura, sem sair de casa ou do trabalho.</p>
-      </div>
-
-      <div class="footer-menu">
-        <p class="footer-tit">Menu</p>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#nossa-equipe">Nossa Equipe</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#beneficios-e-previdencia">Benefícios & Previdência</a></li>
-            <li><a href="#tributos-pessoais">Tributos Pessoais</a></li>
-            <li><a href="#trabalho-e-migracao">Trabalho e Migração</a></li>
-            <li><a href="#legalizacao-do-estrangeiro">Legalização do estrangeiro</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="footer-consultas">
-        <p class="footer-tit">Consultas Jurídicas</p>
-        <nav>
-          <ul>
-            <li><a href="index.html">Aposentadoria Comum</a></li>
-            <li><a href="#servicos">Aposentadoria Especial</a></li>
-            <li><a href="#blog">Benefícios por incapacidade</a></li>
-            <li><a href="#beneficios-e-previdencia">Suspensão da cobrança de 25% no exterior</a></li>
-            <li><a href="#tributos-pessoais">Benefício Internacional</a></li>
-            <li><a href="#trabalho-e-migracao">Regularização de estrangeiro no Brasil</a></li>
-            <li><a href="#legalizacao-do-estrangeiro">Revisão de benefício</a></li>
-            <li><a href="#nossa-equipe">Outros atendimentos</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="footer-sociais">
-        <p class="footer-tit">Siga-nos nas redes sociais</p>
-        <nav>
-          <ul>
-            <li><a href="#"><img src="./assets/img/icons/facebook-dark.svg" alt="Ícone do Facebook da Koetz Advocacia"></a></li>
-            <li><a href="#"><img src="./assets/img/icons/instagram-dark.svg" alt="Ícone do Instagram da Koetz Advocacia"></a></li>
-            <li><a href="#"><img src="./assets/img/icons/linkedin-dark.svg" alt="Ícone do Linkedin da Koetz Advocacia"></a></li>
-            <li><a href="#"><img src="./assets/img/icons/twitter-dark.svg" alt="Ícone do Twitter da Koetz Advocacia"></a></li>
-            <li><a href="#"><img src="./assets/img/icons/youtube-dark.svg" alt="Ícone do Youtube da Koetz Advocacia"></a></li>
-          </ul>
-        </nav>
-        <p class="footer-tit">Proteção de dados</p>
-        <p>DPO (Encarregado de Proteção de
-          Dados): Eduardo Koetz -
-          eduardo@koetzadvocacia.com.br</p>
-
-      </div>
-    </div>
-    <div class="footer-dados">
-      <p>© 2023 Koetz Advocacia. </p>
-      <p>Todos os Direitos Reservados</p>
-    </div>
-  </footer>
-
-  <!-- MEUS SCRIPTS -->
-  <script type="module" src="./assets/js/script.js"></script>
-</body>
-
-</html>
+<!-- Para pegar o Footer -->
+<?php get_footer(); ?>
