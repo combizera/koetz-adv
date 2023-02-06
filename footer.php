@@ -1,3 +1,25 @@
+<!-- MODAL MENU -->
+<nav class="header-modal" data-modal-menu="container">
+      <button class="hamburguer-fechar" data-modal-menu="fechar"></button>
+      <ul>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="beneficios-e-previdencias.html">Benefícios & Previdência</a></li>
+        <li><a href="#">Tributos Pessoais</a></li>
+        <li><a href="#">Trabalho e Migração</a></li>
+        <li><a href="#">Legalização do Estrangeiro</a></li>
+        <li>
+          <ul class="header-modal-sociais">
+            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook.svg" alt="Ícone do Facebook da Koetz Advocacia"></a></li>
+            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/instagram.svg" alt="Ícone do Instagram da Koetz Advocacia"></a></li>
+            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/linkedin.svg" alt="Ícone do Linkedin da Koetz Advocacia"></a></li>
+            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/twitter.svg" alt="Ícone do Twitter da Koetz Advocacia"></a></li>
+            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/youtube.svg" alt="Ícone do Youtube da Koetz Advocacia"></a></li>
+          </ul>
+        </li>
+      </ul>
+</nav>
+
 <!-- FOOTER -->
 <footer id="footer" class="container">
     <div class="grid-4">
@@ -63,7 +85,10 @@
   </footer>
 
   <!-- MEUS SCRIPTS -->
-  <script type="module" src="./assets/js/script.js"></script>
+  <script type="module" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/script.js"></script>
+
+  <!-- FOOTER Wordpress -->
+  <?php wp_footer(); ?>
 </body>
 
 </html>
