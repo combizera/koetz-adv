@@ -31,8 +31,9 @@
       <button>ES</button>
     </div>
     <div class="header-main">
-      <div class="header-logo"><a href="#">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/logo.png" alt="Logotipo Koetz Advocacia"></a>
+      <div class="header-logo">
+        <a href="/koetz-adv/home/">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/logo.png" alt="Logotipo Koetz Advocacia"></a>
       </div>
 
       <div class="header-icones">

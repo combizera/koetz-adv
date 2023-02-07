@@ -3,9 +3,9 @@
       <button class="hamburguer-fechar" data-modal-menu="fechar"></button>
       <ul>
         <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="beneficios-e-previdencias.html">Benefícios & Previdência</a></li>
-        <li><a href="#">Tributos Pessoais</a></li>
+        <li><a href="/koetz-adv/blog/">Blog</a></li>
+        <li><a href="/koetz-adv/beneficios-e-previdencia/">Benefícios & Previdência</a></li>
+        <li><a href="/koetz-adv/equipe/">Tributos Pessoais</a></li>
         <li><a href="#">Trabalho e Migração</a></li>
         <li><a href="#">Legalização do Estrangeiro</a></li>
         <li>
@@ -33,13 +33,13 @@
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#nossa-equipe">Nossa Equipe</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#beneficios-e-previdencia">Benefícios & Previdência</a></li>
-            <li><a href="#tributos-pessoais">Tributos Pessoais</a></li>
-            <li><a href="#trabalho-e-migracao">Trabalho e Migração</a></li>
-            <li><a href="#legalizacao-do-estrangeiro">Legalização do estrangeiro</a></li>
+            <li><a href="/koetz-adv/servicos/">Serviços</a></li>
+            <li><a href="/koetz-adv/equipe/">Nossa Equipe</a></li>
+            <li><a href="/koetz-adv/blog/">Blog</a></li>
+            <li><a href="/koetz-adv/beneficios-e-previdencia/">Benefícios & Previdência</a></li>
+            <li><a href="/koetz-adv/tributos-pessoais/">Tributos Pessoais</a></li>
+            <li><a href="/koetz-adv/trabalho-e-migracao/">Trabalho e Migração</a></li>
+            <li><a href="/koetz-adv/legalizacao-do-estrangeiro/">Legalização do estrangeiro</a></li>
           </ul>
         </nav>
       </div>
@@ -49,13 +49,13 @@
         <nav>
           <ul>
             <li><a href="index.html">Aposentadoria Comum</a></li>
-            <li><a href="#servicos">Aposentadoria Especial</a></li>
-            <li><a href="#blog">Benefícios por incapacidade</a></li>
-            <li><a href="#beneficios-e-previdencia">Suspensão da cobrança de 25% no exterior</a></li>
-            <li><a href="#tributos-pessoais">Benefício Internacional</a></li>
-            <li><a href="#trabalho-e-migracao">Regularização de estrangeiro no Brasil</a></li>
-            <li><a href="#legalizacao-do-estrangeiro">Revisão de benefício</a></li>
-            <li><a href="#nossa-equipe">Outros atendimentos</a></li>
+            <li><a href="/koetz-adv/servicos/">Aposentadoria Especial</a></li>
+            <li><a href="/koetz-adv/blog/">Benefícios por incapacidade</a></li>
+            <li><a href="/koetz-adv/beneficios-e-previdencia/">Suspensão da cobrança de 25% no exterior</a></li>
+            <li><a href="/koetz-adv/">Benefício Internacional</a></li>
+            <li><a href="/koetz-adv/blog/">Regularização de estrangeiro no Brasil</a></li>
+            <li><a href="/koetz-adv/blog/">Revisão de benefício</a></li>
+            <li><a href="/koetz-adv/equipe/">Outros atendimentos</a></li>
           </ul>
         </nav>
       </div>

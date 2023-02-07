@@ -2,6 +2,8 @@
 // Template name: Home
 get_header(); ?>
 
+  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
   <!-- MAIN -->
   <main>
     <!-- HERO -->
@@ -259,6 +261,9 @@ get_header(); ?>
     </article>
 
   </main>
+
+  <?php endwhile; else: endif; ?>
+
 
 <!-- Para pegar o Footer -->
 <?php get_footer(); ?>

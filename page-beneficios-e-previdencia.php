@@ -2,6 +2,8 @@
 // Template name: Benefícios e Previdência
 get_header(); ?>
 
+  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
   <!-- MAIN -->
   <main>
     <!-- HERO -->
@@ -126,6 +128,8 @@ get_header(); ?>
       </div>
     </article>
   </main>
+
+  <?php endwhile; else: endif; ?>
 
 <!-- Para pegar o Footer -->
 <?php get_footer(); ?>
