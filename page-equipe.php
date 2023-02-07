@@ -1,5 +1,6 @@
-<!-- Para pegar o Header -->
-<?php get_header(); ?>
+<?php 
+// Template name: Equipe
+get_header(); ?>
 
   <!-- MAIN -->
   <main>
