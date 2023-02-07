@@ -6,13 +6,6 @@ get_header(); ?>
 
   <!-- MAIN -->
   <main>
-    <!-- HERO -->
-    <section class="hero flex-center">
-      <div class="hero-txt flex-center container">
-        <h1>Conheça os benefícios e <span class="txt-red">previdências</span></h1>
-      </div>
-    </section>
-
     <!-- BENEFÍCIOS E PREVIDÊNCIAS -->
     <section class="beneficios container">
       <div class="pagination">Home / <strong>Benefícios e previdências</strong></div>
