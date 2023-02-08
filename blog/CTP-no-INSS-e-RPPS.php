@@ -1,49 +1,14 @@
-<html lang="pt-br">
+<?php 
+// Template name: Blog
+get_header(); ?>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Descrição do site -->
-  <meta name="description" content="A Koetz Advocacia é formada por uma equipe de advogados especializados em Direito Previdenciário, Migratório, Tributário e Internacional.">
-  <!-- Estilos -->
-  <link rel="stylesheet" href="./../assets/css/style.css">
-  <!-- Tipografia -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Título -->
-  <title>Koetz Advocacia | Direito Internacional e Previdenciário</title>
-</head>
-
-<!-- BODY -->
-
-<body class="blog">
-
-  <!-- HEADER -->
-  <!-- Início gulp -->
-  <header id="header" class="container">
-    <div class="lang">
-      <button class="lang-active">PT</button>
-      <button>EN</button>
-      <button>ES</button>
-    </div>
-    <div class="header-main">
-      <div class="header-logo"><a href="#">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/../assets/img/icons/logo.png" alt="Logotipo Koetz Advocacia"></a>
-      </div>
-
-      <div class="header-icones">
-        <a href="#"></a><img src="<?php echo get_stylesheet_directory_uri(); ?>/../assets/img/icons/pesquisar.png" alt="Ícone de Pesquisa">
-        <button class="hamburguer" data-modal-menu="abrir"></button>
-      </div>
-    </div>
-  </header>
+  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
   <!-- MAIN -->
   <main class="container">
     <!-- BLOG GERAL -->
     <div class="blog-grid-container container">
+      
       <!-- BLOG MAIN -->
       <section class="blog-main">
         <div class="blog-post">
@@ -125,30 +90,8 @@
         <!-- CAMPO DE BUSCA -->
         <div class="aside-card blog-aside-busca">busca</div>
 
-        <!-- CTA EMAIL  -->
-        <div class="aside-card blog-aside-email">
-          <p class="aside-tit">Deseja Falar com a nossa <span class="txt-red"> equipe</span>?</p>
-          <p>Preencha os dados abaixo para receber as informações de contato dos nossos advogados.</p>
-          <div class="form-base">
-            <form action="#">
-              <div class="form-base">
-                <div class="input-box">
-                  <input id="name" name="name" type="text" required>
-                  <label for="name">Nome *</label>
-                </div>
-                <div class="input-box">
-                  <input id="email" name="email" type="email" required>
-                  <label for="email">Email *</label>
-                </div>
-                <div class="input-box input-checkbox">
-                  <input type="checkbox" name="checkbox" id="checkbox" required>
-                  <label for="checkbox" name="checkbox">Eu concordo em receber informações via e-mail.</label>
-                </div>
-              </div>
-              <button class="btn btn-sec" type="submit">Solicitar Contato</button>
-            </form>
-          </div>
-        </div>
+        <!-- CTA EMAIL -->
+        <?php include(TEMPLATEPATH . "/assets/inc/cta-email.php"); ?> 
 
         <!-- POSTS POPULARES -->
         <div class="aside-card blog-aside-posts">
@@ -234,72 +177,7 @@
     </nav>
   </main>
 
-  <!-- FOOTER -->
-  <footer id="footer" class="container">
-    <div class="grid-4">
-      <div class="footer-logo">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/../assets/img/icons/logo.png" alt="Logotipo Koetz Advocacia">
-        <p>Nossos clientes em qualquer lugar do planeta tem acesso rápido às suas informações, mas de maneira segura, sem sair de casa ou do trabalho.</p>
-      </div>
+  <?php endwhile; else: endif; ?>
 
-      <div class="footer-menu">
-        <p class="footer-tit">Menu</p>
-        <nav>
-          <ul>
-            <li><a href="./../index.html">Home</a></li>
-            <li><a href="./../servicos">Serviços</a></li>
-            <li><a href="./../equipe-koetz.html">Nossa Equipe</a></li>
-            <li><a href="./../blog.html">Blog</a></li>
-            <li><a href="./../beneficios-e-previdencia">Benefícios & Previdência</a></li>
-            <li><a href="./../tributos-pessoais">Tributos Pessoais</a></li>
-            <li><a href="./../trabalho-e-migracao">Trabalho e Migração</a></li>
-            <li><a href="./../legalizacao-do-estrangeiro">Legalização do estrangeiro</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="footer-consultas">
-        <p class="footer-tit">Consultas Jurídicas</p>
-        <nav>
-          <ul>
-            <li><a href="./../index.html">Aposentadoria Comum</a></li>
-            <li><a href="./../servicos">Aposentadoria Especial</a></li>
-            <li><a href="./../blog">Benefícios por incapacidade</a></li>
-            <li><a href="./../beneficios-e-previdencias.html">Suspensão da cobrança de 25% no exterior</a></li>
-            <li><a href="./../tributos-pessoais">Benefício Internacional</a></li>
-            <li><a href="./../trabalho-e-migracao">Regularização de estrangeiro no Brasil</a></li>
-            <li><a href="./../legalizacao-do-estrangeiro">Revisão de benefício</a></li>
-            <li><a href="./../equipe-koetz.html">Outros atendimentos</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="footer-sociais">
-        <p class="footer-tit">Siga-nos nas redes sociais</p>
-        <nav>
-          <ul>
-            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/../assets/img/icons/facebook-dark.svg" alt="Ícone do Facebook da Koetz Advocacia"></a></li>
-            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/../assets/img/icons/instagram-dark.svg" alt="Ícone do Instagram da Koetz Advocacia"></a></li>
-            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/../assets/img/icons/linkedin-dark.svg" alt="Ícone do Linkedin da Koetz Advocacia"></a></li>
-            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/../assets/img/icons/twitter-dark.svg" alt="Ícone do Twitter da Koetz Advocacia"></a></li>
-            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/../assets/img/icons/youtube-dark.svg" alt="Ícone do Youtube da Koetz Advocacia"></a></li>
-          </ul>
-        </nav>
-        <p class="footer-tit">Proteção de dados</p>
-        <p>DPO (Encarregado de Proteção de
-          Dados): Eduardo Koetz -
-          eduardo@koetzadvocacia.com.br</p>
-
-      </div>
-    </div>
-    <div class="footer-dados">
-      <p>© 2023 Koetz Advocacia. </p>
-      <p>Todos os Direitos Reservados</p>
-    </div>
-  </footer>
-
-  <!-- MEUS SCRIPTS -->
-  <script type="module" src="./../assets/js/script.js"></script>
-</body>
-
-</html>
+<!-- Pegar o Footer -->
+<?php get_footer(); ?>

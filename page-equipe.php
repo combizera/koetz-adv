@@ -7,15 +7,12 @@ get_header(); ?>
   <!-- MAIN -->
   <main>
     <!-- HERO -->
-    <section class="hero flex-center">
-      <div class="hero-txt flex-center container">
-        <h1>Conheça a <span class="txt-red">equipe</span> Koetz</h1>
-      </div>
-    </section>
-
+    <?php include(TEMPLATEPATH . "/assets/inc/hero.php"); ?> 
     <!-- NOSSA EQUIPE -->
     <section class="adv container">
-      <div class="pagination">Home / <strong>Nossa Equipe</strong></div>
+
+      <!-- MAPPING -->
+      <?php include(TEMPLATEPATH . "/assets/inc/mapping.php"); ?> 
       <div class="equipe-box secao">
         <nav class="equipe-nav js-tabmenu">
           <ul>
@@ -118,35 +115,8 @@ get_header(); ?>
       </div>
     </section>
 
-
     <!-- CTA EMAIL -->
-    <article id="cta-email">
-      <div class="cta-email container">
-        <div class="cta-email-txt">
-          <h2>Faremos mais que o possível para entregar os direitos aos nossos clientes, <span class="txt-red"> sempre</span>.</h2>
-          <p>Insira seus dados ao lado e entraremos em contato com você.</p>
-        </div>
-        <div class="cta-email-form">
-          <form action="#">
-            <div class="form-base">
-              <div class="input-box">
-                <input id="name" name="name" type="text" required>
-                <label for="name">Nome Completo</label>
-              </div>
-              <div class="input-box">
-                <input id="email" name="email" type="email" required>
-                <label for="email">Email</label>
-              </div>
-            </div>
-            <div class="input-box">
-              <textarea name="subject" id="subject" rows="1" required></textarea>
-              <label for="subject">Assunto</label>
-            </div>
-            <button class="btn btn-sec" type="submit">Entre em contato</button>
-          </form>
-        </div>
-      </div>
-    </article>
+    <?php include(TEMPLATEPATH . "/assets/inc/cta-email.php"); ?> 
   </main>
 
   <?php endwhile; else: endif; ?>

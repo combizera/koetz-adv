@@ -64,7 +64,7 @@ body {
 .container {
   max-width: $container-xl;
   margin: 0 auto;
-  border: 3px solid yellow;
+  border: 2px solid red;
 
   @include responsive(s) {
     flex-direction: column;
@@ -116,7 +116,7 @@ img {
   gap: 30px;
 }
 
-.pagination {
+.mapping {
   text-transform: uppercase;
   letter-spacing: 2px;
   color: $grey-normal;

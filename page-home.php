@@ -163,59 +163,8 @@ get_header(); ?>
       <a href="#" class="btn btn-pri">Entre em contato</a>
     </section>
 
-    <!-- BLOG -->
-    <section id="home-blog" class="home-blog container secao flex-center">
-      <div class="secao-tit">
-        <p>Leia nosso Blog</p>
-        <h2>Conheça seus<span class="txt-red"> direitos</span></h2>
-      </div>
-      <div class="blog-cards">
-        <div class="blog-card">
-          <a href="#">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/post1.png" alt="Postagem 1">
-            <p>Visto Mercosul no Brasil: isenções, regras, residência e mais.</p>
-          </a>
-          <div class="blog-card-hidden">
-            <span>Neste texto explicaremos a função do visto do Mercosul, como tirar o visto do Mercosul no Brasil e quais são os requisitos na Polícia Federal. Entenda!</span>
-            <a href="blog.html">Ler mais</a>
-          </div>
-        </div>
-
-        <div class="blog-card">
-          <a href="#" class="blog-card">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/post2.png" alt="Postagem 2">
-            <p>Aposentados do INSS: direitos, atrasados e revisão de benefício.</p>
-          </a>
-          <div class="blog-card-hidden">
-            <span>Neste texto explicaremos a função do visto do Mercosul, como tirar o visto do Mercosul no Brasil e quais são os requisitos na Polícia Federal. Entenda!</span>
-            <a href="blog.html">Ler mais</a>
-          </div>
-        </div>
-
-        <div class="blog-card">
-          <a href="#" class="blog-card">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/post3.png" alt="Postagem 3">
-            <p>Aposentadoria Rural hoje: quais os requisitos do INSS?</p>
-          </a>
-          <div class="blog-card-hidden">
-            <span>Neste texto explicaremos a função do visto do Mercosul, como tirar o visto do Mercosul no Brasil e quais são os requisitos na Polícia Federal. Entenda!</span>
-            <a href="blog.html">Ler mais</a>
-          </div>
-        </div>
-
-        <div class="blog-card">
-          <a href="#" class="blog-card">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/post4.png" alt="Postagem 4">
-            <p>Revisão do Artigo 29: aposentadoria por invalidez e auxílio…</p>
-          </a>
-          <div class="blog-card-hidden">
-            <span>Neste texto explicaremos a função do visto do Mercosul, como tirar o visto do Mercosul no Brasil e quais são os requisitos na Polícia Federal. Entenda!</span>
-            <a href="blog.html">Ler mais</a>
-          </div>
-        </div>
-      </div>
-      <a href="#" class="btn btn-pri">Entre em contato</a>
-    </section>
+    <!-- CARDS BLOG -->
+    <?php include(TEMPLATEPATH . "/assets/inc/cards-blog.php"); ?> 
 
     <!-- NA MÍDIA -->
     <section id="na-midia" class="midia container secao flex-center">
@@ -232,33 +181,7 @@ get_header(); ?>
     </section>
 
     <!-- CTA EMAIL -->
-    <article id="cta-email">
-      <div class="cta-email container">
-        <div class="cta-email-txt">
-          <h2>Faremos mais que o possível para entregar os direitos aos nossos clientes, <span class="txt-red"> sempre</span>.</h2>
-          <p>Insira seus dados ao lado e entraremos em contato com você.</p>
-        </div>
-        <div class="cta-email-form">
-          <form action="#">
-            <div class="form-base">
-              <div class="input-box">
-                <input id="name" name="name" type="text" required>
-                <label for="name">Nome Completo</label>
-              </div>
-              <div class="input-box">
-                <input id="email" name="email" type="email" required>
-                <label for="email">Email</label>
-              </div>
-            </div>
-            <div class="input-box">
-              <textarea name="subject" id="subject" rows="1" required></textarea>
-              <label for="subject">Assunto</label>
-            </div>
-            <button class="btn btn-sec" type="submit">Entre em contato</button>
-          </form>
-        </div>
-      </div>
-    </article>
+    <?php include(TEMPLATEPATH . "/assets/inc/cta-email.php"); ?> 
 
   </main>
 

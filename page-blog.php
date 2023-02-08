@@ -4,7 +4,7 @@ get_header(); ?>
 
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-  <?php include(TEMPLATEPATH . "/assets/inc/hero.php")
+  <?php include(TEMPLATEPATH . "/assets/inc/hero.php"); ?>
 
   <!-- MAIN -->
   <main class="container">
@@ -16,7 +16,7 @@ get_header(); ?>
       <div class="hero-txt">
         <h1>Tributos</h1>
         <h2>Brasileiros que vivem no exterior</h2>
-        <a href="#" class="btn btn-pri-dark">Ler mais</a>
+        <a href="/blog/CTP-no-INSS-e-RPPS.php" class="btn btn-pri-dark">Ler mais</a>
       </div>
     </section>
 
@@ -47,7 +47,7 @@ get_header(); ?>
               </nav>
               </p>
             </div>
-            <a href="./blog/CTP-no-INSS-e-RPPS.html" class="btn btn-pri">Ler mais</a>
+            <a href="./blog/CTP-no-INSS-e-RPPS" class="btn btn-pri">Ler mais</a>
           </div>
         </div>
 
@@ -105,7 +105,7 @@ get_header(); ?>
           </div>
         </div>
 
-        <div class="blog-pagination">Paginação</div>
+        <div class="blog-mapping">Paginação</div>
       </section>
 
       <!-- BLOG ASIDE -->
@@ -202,33 +202,7 @@ get_header(); ?>
   </main>
 
   <!-- CTA EMAIL -->
-  <article id="cta-email">
-    <div class="cta-email container">
-      <div class="cta-email-txt">
-        <h2>Faremos mais que o possível para entregar os direitos aos nossos clientes, <span class="txt-red"> sempre</span>.</h2>
-        <p>Insira seus dados ao lado e entraremos em contato com você.</p>
-      </div>
-      <div class="cta-email-form">
-        <form action="#">
-          <div class="form-base">
-            <div class="input-box">
-              <input id="name" name="name" type="text" required>
-              <label for="name">Nome Completo</label>
-            </div>
-            <div class="input-box">
-              <input id="email" name="email" type="email" required>
-              <label for="email">Email</label>
-            </div>
-          </div>
-          <div class="input-box">
-            <textarea name="subject" id="subject" rows="1" required></textarea>
-            <label for="subject">Assunto</label>
-          </div>
-          <button class="btn btn-sec" type="submit">Entre em contato</button>
-        </form>
-      </div>
-    </div>
-  </article>
+  <?php include(TEMPLATEPATH . "/assets/inc/cta-email.php"); ?> 
 
   <?php endwhile; else: endif; ?>
 
