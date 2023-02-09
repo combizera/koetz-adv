@@ -6,10 +6,12 @@ const autoprefixer = require("gulp-autoprefixer");
 const browserSync = require("browser-sync").create();
 
 // Funções para compilar o SASS e adicionar os prefixos
+// Inserir isso depois
+// .pipe(sass({ outputStyle: "compressed" }))
 function compilaSass() {
   return gulp
     .src("assets/css/scss/**/*.scss")
-    .pipe(sass({ outputStyle: "compressed" }))
+    .pipe(sass())
     .pipe(
       autoprefixer({
         cascade: false,

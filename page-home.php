@@ -16,7 +16,7 @@ get_header(); ?>
 
     <!-- CITAÇÃO -->
     <article id="citacao" class="bg-red">
-      <div class="citacao flex-center">
+      <div class="citacao flex-center container ">
         <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/martin_luther_jr.webp" alt="martin_luther_jr">
         <div>
           <h6><span class="aspas">“</span> Injustiça em qualquer lugar é uma ameaça a justiça em todo mundo.</h6>

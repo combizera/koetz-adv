@@ -41,6 +41,7 @@
   margin-left: 1rem;
   border-radius: 1px;
 }
+
 .hamburguer::after,
 .hamburguer::before,
 .hamburguer-fechar::after,
@@ -59,7 +60,7 @@
   display: block;
   cursor: pointer;
   border: none;
-  border-top: 3px solid $white;
+  background: none;
   width: 30px;
   margin-left: 1rem;
   border-radius: 1px;

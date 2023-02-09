@@ -2,21 +2,18 @@
   background-color: $red;
   color: $white;
 }
-
 .citacao {
   flex-direction: row;
-  padding: 20px 200px;
-
+  padding: 20px 60px;
   img {
     max-width: 350px;
-    margin-right: 40px;
+    margin-right: 120px;
   }
   p {
     margin-top: 40px;
     color: $white;
   }
 }
-
 #citacao2 {
   text-align: center;
   padding: 60px 300px;
