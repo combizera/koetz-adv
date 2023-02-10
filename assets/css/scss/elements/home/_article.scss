@@ -13,6 +13,16 @@
     margin-top: 40px;
     color: $white;
   }
+  @include responsive(s) {
+    flex-direction: column-reverse;
+    padding: 60px 20px;
+    p {
+      margin: 20px 0px;
+    }
+    img {
+      margin-right: 0px;
+    }
+  }
 }
 #citacao2 {
   text-align: center;
