@@ -1,15 +1,3 @@
-.grid-5 {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem;
-  
-  @include responsive(1400px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
 .equipe {
   margin: 0 auto;
   max-width: 92.5rem;
@@ -36,7 +24,7 @@
   }
 
   &::before {
-    content: '';
+    content: "";
     opacity: 0;
     position: absolute;
     inset: 0;
@@ -75,7 +63,7 @@
   padding: 2.375rem;
   transform: translateY(-100%);
   transition: inset 300ms ease;
-  
+
   span {
     width: max-content;
     display: block;
@@ -87,7 +75,7 @@
   }
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 7rem;
     height: 100%;

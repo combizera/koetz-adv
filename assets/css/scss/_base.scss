@@ -116,6 +116,18 @@ img {
   gap: 30px;
 }
 
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+
+  @include responsive(1400px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .mapping {
   text-transform: uppercase;
   letter-spacing: 2px;

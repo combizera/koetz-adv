@@ -89,7 +89,7 @@ get_header(); ?>
     </article>
 
     <!-- NOSSA EQUIPE -->
-    <section class="equipe secao flex-center">
+    <section class="equipe secao flex-center container">
       <div class="secao-tit">
         <p>Conheça os Líderes de Nossa Equipe</p>
         <h2>Vidas<span class="txt-red"> Dedicadas a luta</span> Por concretizar os direitos das pessoas.</h2>
