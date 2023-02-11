@@ -118,6 +118,10 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  @include responsive(s) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 
 .grid-5 {
@@ -129,6 +133,11 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  @include responsive(s) {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 20px 10px;
   }
 }
 

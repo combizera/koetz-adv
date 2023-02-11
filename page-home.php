@@ -9,7 +9,7 @@ get_header(); ?>
     <!-- HERO -->
     <section class="hero flex-center">
       <div class="hero-txt flex-center container">
-        <h1>Atendemos qualquer pessoa em qualquer lugar do mundo!</h1>
+        <h1>Atendemos qualquer pessoa em qualquer lugar do <span class="txt-red"> mundo</span>!</h1>
         <a href="#" class="btn btn-pri">Entre em contato</a>
       </div>
     </section>

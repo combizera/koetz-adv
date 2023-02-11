@@ -27,4 +27,7 @@
 #citacao2 {
   text-align: center;
   padding: 60px 300px;
+  @include responsive(s) {
+    padding: 20px;
+  }
 }

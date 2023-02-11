@@ -94,6 +94,12 @@ img {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
+@media screen and (max-width: 960px) {
+  .grid-4 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
 
 .grid-5 {
   display: grid;
@@ -110,6 +116,12 @@ img {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+}
+@media screen and (max-width: 960px) {
+  .grid-5 {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 20px 10px;
   }
 }
 
@@ -563,6 +575,8 @@ h1 {
 @media screen and (max-width: 960px) {
   h1 {
     font-family: "Source Sans Pro", sans-serif;
+    font-size: 2.8rem;
+    line-height: 4rem;
   }
 }
 
@@ -630,6 +644,8 @@ h6 {
 @media screen and (max-width: 960px) {
   h6 {
     font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.875rem;
+    line-height: 2.125rem;
   }
 }
 
@@ -656,6 +672,8 @@ a {
 @media screen and (max-width: 960px) {
   a {
     font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.25rem;
+    line-height: 100%;
   }
 }
 
@@ -873,6 +891,11 @@ a {
 #citacao2 {
   text-align: center;
   padding: 60px 300px;
+}
+@media screen and (max-width: 960px) {
+  #citacao2 {
+    padding: 20px;
+  }
 }
 
 .solucoes-container {
