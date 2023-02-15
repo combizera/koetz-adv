@@ -72,6 +72,24 @@
       }
     }
   }
+  @include responsive(s) {
+    padding: 40px 20px;
+
+    .footer-tit {
+      margin-bottom: 10px;
+    }
+
+    .footer-logo {
+      img {
+        margin-bottom: 1rem;
+      }
+    }
+    .footer-sociais {
+      ul {
+        margin: 20px 0;
+      }
+    }
+  }
 }
 
 .modal-sucess {

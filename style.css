@@ -118,7 +118,7 @@ img {
     justify-content: center;
   }
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 900px) {
   .grid-5 {
     grid-template-columns: 1fr 1fr !important;
     gap: 20px 10px;
@@ -141,6 +141,14 @@ img {
   width: 100%;
   padding: 10px;
   cursor: pointer;
+}
+@media screen and (max-width: 960px) {
+  #cta-email {
+    padding: 60px 20px;
+  }
+  #cta-email [type=submit] {
+    margin-top: 40px;
+  }
 }
 
 .form-base .input-box {
@@ -189,6 +197,14 @@ img {
 }
 .form-textarea label {
   top: 30px;
+}
+@media screen and (max-width: 960px) {
+  .form-textarea textarea {
+    margin-top: 60px;
+  }
+  .form-textarea label {
+    top: 50px;
+  }
 }
 
 #header {
@@ -436,6 +452,20 @@ img {
 }
 #footer .footer-sociais a:hover {
   opacity: 0.5;
+}
+@media screen and (max-width: 960px) {
+  #footer {
+    padding: 40px 20px;
+  }
+  #footer .footer-tit {
+    margin-bottom: 10px;
+  }
+  #footer .footer-logo img {
+    margin-bottom: 1rem;
+  }
+  #footer .footer-sociais ul {
+    margin: 20px 0;
+  }
 }
 
 .modal-sucess {
@@ -784,6 +814,14 @@ a {
   padding: 10px;
   cursor: pointer;
 }
+@media screen and (max-width: 960px) {
+  #cta-email {
+    padding: 60px 20px;
+  }
+  #cta-email [type=submit] {
+    margin-top: 40px;
+  }
+}
 
 .form-base .input-box {
   position: relative;
@@ -831,6 +869,14 @@ a {
 }
 .form-textarea label {
   top: 30px;
+}
+@media screen and (max-width: 960px) {
+  .form-textarea textarea {
+    margin-top: 60px;
+  }
+  .form-textarea label {
+    top: 50px;
+  }
 }
 
 #na-midia .midia-cards {

@@ -8,6 +8,13 @@
     padding: 10px;
     cursor: pointer;
   }
+  @include responsive(s) {
+    padding: 60px 20px;
+
+    [type="submit"] {
+      margin-top: 40px;
+    }
+  }
 }
 
 .form-base {
@@ -60,5 +67,13 @@
   }
   label {
     top: 30px;
+  }
+  @include responsive(s) {
+    textarea {
+      margin-top: 60px;
+    }
+    label {
+      top: 50px;
+    }
   }
 }

@@ -135,7 +135,7 @@ img {
     justify-content: center;
   }
 
-  @include responsive(s) {
+  @include responsive(900px) {
     grid-template-columns: 1fr 1fr !important;
     gap: 20px 10px;
   }
