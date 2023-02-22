@@ -2,18 +2,16 @@
   margin: 0 auto;
   max-width: 92.5rem;
   padding-bottom: 2rem;
-  transition: 0.3s ease all;
 
   .blog-cards {
     display: grid;
     gap: 1rem;
-    transition: 0.3s ease;
+    transition: all 300ms ease;
 
     grid-auto-flow: column;
     grid-template-columns: repeat(4, 1fr);
     min-height: 25rem;
     width: 100%;
-    transition-delay: 1s;
     overflow-x: auto;
     
     @include responsive(s) {
@@ -31,7 +29,7 @@
   .blog-card {
     position: relative;
     display: flex;
-
+    
     a {
       position: relative;
       &::before {
