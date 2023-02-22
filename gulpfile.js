@@ -29,9 +29,7 @@ gulp.task("sass", compilaSass);
 // Função para iniciar o Browser
 function browser() {
   browserSync.init({
-    server: {
-      baseDir: "./",
-    },
+    proxy: process.env.URL_LOCAL, // Coloque aqui a URL do site no local
     open: false,
   });
 }
