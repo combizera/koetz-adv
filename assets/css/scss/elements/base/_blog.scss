@@ -15,11 +15,17 @@
     width: 100%;
     transition-delay: 1s;
     overflow-x: auto;
+    
+    @include responsive(s) {
+      grid-template-columns: repeat(4, minmax(20rem, 1fr));
+    }
   }
 
   .blog-cards:hover {
-    gap: 0.5rem;
-    grid-template-columns: repeat(5, minmax(20rem, 1fr));
+    @media screen and (min-width: $container-s) {
+      gap: 0.5rem;
+      grid-template-columns: repeat(5, minmax(20rem, 1fr));
+    }
   }
 
   .blog-card {
@@ -61,28 +67,37 @@
   .blog-card-hidden {
     background-color: $red;
     display: none;
+    padding: 45px 30px;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    color: $white;
+    position: relative;
   }
   .blog-card {
-    &:hover {
-      grid-column: span 2;
-
-      a {
-        width: 50%;
-      }
-      
-      @include responsive(s) {
+    @media screen and (min-width: $container-s) {
+      &:hover {
         grid-column: span 2;
+  
+        a {
+          width: 50%;
+        }
+  
+        .blog-card-hidden {
+          display: block;
+          width: 50%;
+          animation: blog-card-appear 300ms ease forwards;
+        }
       }
+    }
+
+    @include responsive(xs) {
+      display: flex;
+      flex-direction: column;
 
       .blog-card-hidden {
-        position: relative;
         display: block;
-        padding: 45px 30px;
-        font-size: 1.125rem;
-        line-height: 2rem;
-        color: $white;
-        width: 50%;
-        animation: blog-card-appear 300ms ease forwards;
+        width: 100%;
+        flex: 1;
       }
     }
   }
