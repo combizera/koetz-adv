@@ -13,6 +13,22 @@
     min-height: 25rem;
     width: 100%;
     overflow-x: auto;
+
+    &::-webkit-scrollbar {
+      height: 12px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #f1f1f1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: lighten($red, 5);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: lighten($red, 20);
+    } 
     
     @include responsive(s) {
       grid-template-columns: repeat(4, minmax(20rem, 1fr));
