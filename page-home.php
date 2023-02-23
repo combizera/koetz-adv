@@ -99,7 +99,9 @@ get_header(); ?>
         <li class="equipe-card">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/eduardo-koetz.png" alt="Eduardo Koetz">
           <div class="equipe-nome">
-            <span>Eduardo Koetz</span>
+            <span>
+              <strong class="equipe-nome__icon">+</strong> Eduardo Koetz
+            </span>
           </div>
           <div class="equipe-info">
             <p>
@@ -112,7 +114,9 @@ get_header(); ?>
         <li class="equipe-card">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/eduardo-koetz.png" alt="Eduardo Koetz">
           <div class="equipe-nome">
-            <span>Eduardo Koetz</span>
+            <span>
+              <strong class="equipe-nome__icon">+</strong> Eduardo Koetz
+            </span>
           </div>
           <div class="equipe-info">
             <p>
@@ -125,7 +129,9 @@ get_header(); ?>
         <li class="equipe-card">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/eduardo-koetz.png" alt="Eduardo">
           <div class="equipe-nome">
-            <span>Eduardo Koetz</span>
+            <span>
+              <strong class="equipe-nome__icon">+</strong> Eduardo Koetz
+            </span>
           </div>
           <div class="equipe-info">
             <p>
@@ -138,7 +144,9 @@ get_header(); ?>
         <li class="equipe-card">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/eduardo-koetz.png" alt="Eduardo Koetz">
           <div class="equipe-nome">
-            <span>Eduardo Koetz</span>
+            <span>
+              <strong class="equipe-nome__icon">+</strong> Eduardo Koetz
+            </span>
           </div>
           <div class="equipe-info">
             <p>
@@ -151,7 +159,9 @@ get_header(); ?>
         <li class="equipe-card">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/eduardo-koetz.png" alt="Eduardo Koetz">
           <div class="equipe-nome">
-            <span>Eduardo Koetz</span>
+            <span>
+              <strong class="equipe-nome__icon">+</strong> Eduardo Koetz
+            </span>
           </div>
           <div class="equipe-info">
             <p>
@@ -168,31 +178,50 @@ get_header(); ?>
           const $container = document.querySelector('.equipe-cards');
           const rows = Math.round(($equipeCards.length + 1) / 2);
 
+          const matchMedia = window.matchMedia('(max-width: 800px)');
+
+          function handleEquipeCardClick(event) {
+            const $card = event.currentTarget;
+            $equipeCards.forEach((card) => {
+              if (card.classList.contains('open')) {
+                card.querySelector('.equipe-nome__icon').textContent = '+';
+                card.classList.remove('open');
+              } else if (card === $card) {
+                $card.querySelector('.equipe-nome__icon').textContent = '-';
+                $card.classList.add('open');
+              }
+            });
+          }
+
           function handleEquipeCardEvents({ matches }) {
+            const $fragment = document.createDocumentFragment();
             if (matches) {
-              const $fragment = document.createDocumentFragment();
               for (let i = 0; i < rows; i++) {
                 const cardsIndex = [i * 2, i * 2 + 1];
                 const $row = document.createElement('div');
                 $row.classList.add('equipe-cards-row');
-                cardsIndex.forEach((item) => $equipeCards[item] && $row.appendChild($equipeCards[item]));
+                cardsIndex.forEach((item) => {
+                  if (!$equipeCards[item]) return;
+                  $row.appendChild($equipeCards[item]);
+                  $equipeCards[item].addEventListener('click', handleEquipeCardClick);
+                });
                 $fragment.appendChild($row);
               }
-              $container.appendChild($fragment);
             } else {
               const $equipeCardsRows = $container.querySelectorAll('.equipe-cards-row');
               if ($equipeCardsRows.length === 0) return;
-              const $fragment = document.createDocumentFragment();
               $equipeCardsRows.forEach((row) => {
                 const $equipeCards = Array.from(row.childNodes);
-                $equipeCards.forEach((child) => $fragment.appendChild(child));
+                $equipeCards.forEach((child) => {
+                  child.removeEventListener('click', handleEquipeCardClick);
+                  child.classList.remove('open');
+                  $fragment.appendChild(child);
+                });
                 row.remove();
               });
-              $container.appendChild($fragment);
             }
+            $container.appendChild($fragment);
           }
-
-          const matchMedia = window.matchMedia('(max-width: 800px)');
 
           matchMedia.addEventListener('change', handleEquipeCardEvents);
           handleEquipeCardEvents(matchMedia);
