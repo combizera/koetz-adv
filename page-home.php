@@ -169,6 +169,14 @@ get_header(); ?>
             </p>
           </div>
         </li>
+
+        <li class="equipe-card equipe-card--more">
+          <div>
+            <h3>Conheça o restante de nossa equipe</h3>
+            <p>Exemplo de um serviço jurídico cada vez melhor, para um público cada vez maior, com mais qualidade.</p>
+            <a href="#">Ver mais</a>
+          </div>
+        </li>
       </ul>
       <a href="#" class="btn btn-pri">Entre em contato</a>
 
@@ -203,6 +211,7 @@ get_header(); ?>
                 cardsIndex.forEach((item) => {
                   if (!$equipeCards[item]) return;
                   $row.appendChild($equipeCards[item]);
+                  if ($equipeCards[item].classList.contains('equipe-card--more')) return;
                   $equipeCards[item].addEventListener('click', handleEquipeCardClick);
                 });
                 $fragment.appendChild($row);
