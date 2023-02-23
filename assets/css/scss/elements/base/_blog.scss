@@ -41,6 +41,10 @@
     position: relative;
     display: flex;
     max-height: 25rem;
+
+    @include responsive(xs) {
+      max-height: unset;
+    }
     
     a {
       position: relative;
