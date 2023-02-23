@@ -161,6 +161,43 @@ get_header(); ?>
         </li>
       </ul>
       <a href="#" class="btn btn-pri">Entre em contato</a>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const $equipeCards = Array.from(document.querySelectorAll('.equipe-card'));
+          const $container = document.querySelector('.equipe-cards');
+          const rows = Math.round(($equipeCards.length + 1) / 2);
+
+          function handleEquipeCardEvents({ matches }) {
+            if (matches) {
+              const $fragment = document.createDocumentFragment();
+              for (let i = 0; i < rows; i++) {
+                const cardsIndex = [i * 2, i * 2 + 1];
+                const $row = document.createElement('div');
+                $row.classList.add('equipe-cards-row');
+                cardsIndex.forEach((item) => $equipeCards[item] && $row.appendChild($equipeCards[item]));
+                $fragment.appendChild($row);
+              }
+              $container.appendChild($fragment);
+            } else {
+              const $equipeCardsRows = $container.querySelectorAll('.equipe-cards-row');
+              if ($equipeCardsRows.length === 0) return;
+              const $fragment = document.createDocumentFragment();
+              $equipeCardsRows.forEach((row) => {
+                const $equipeCards = Array.from(row.childNodes);
+                $equipeCards.forEach((child) => $fragment.appendChild(child));
+                row.remove();
+              });
+              $container.appendChild($fragment);
+            }
+          }
+
+          const matchMedia = window.matchMedia('(max-width: 800px)');
+
+          matchMedia.addEventListener('change', handleEquipeCardEvents);
+          handleEquipeCardEvents(matchMedia);
+        });
+      </script>
     </section>
 
     <!-- CARDS BLOG -->

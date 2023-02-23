@@ -2,37 +2,48 @@
   margin: 0 auto;
   max-width: 92.5rem;
   padding-bottom: 2rem;
-  transition: 0.3s ease all;
 
   .blog-cards {
     display: grid;
     gap: 1rem;
-    transition: 0.3s ease;
+    transition: all 300ms ease;
 
     grid-auto-flow: column;
     grid-template-columns: repeat(4, 1fr);
-    height: 400px;
-    transition-delay: 1s;
+    min-height: 25rem;
+    width: 100%;
+    overflow-x: auto;
+    
+    @include responsive(s) {
+      grid-template-columns: repeat(4, minmax(20rem, 1fr));
+    }
   }
 
   .blog-cards:hover {
-    gap: 0.5rem;
-    grid-template-columns: repeat(6, 1fr);
+    @media screen and (min-width: $container-s) {
+      gap: 0.5rem;
+      grid-template-columns: repeat(5, minmax(20rem, 1fr));
+    }
   }
 
   .blog-card {
     position: relative;
     display: flex;
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      background: linear-gradient(
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.67) 100%
-      );
+    
+    a {
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        background: linear-gradient(
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.67) 100%
+        );
+        z-index: 0;
+      }
     }
     p {
       position: absolute;
@@ -54,19 +65,54 @@
   .blog-card-hidden {
     background-color: $red;
     display: none;
+    padding: 45px 30px;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    color: $white;
+    position: relative;
   }
   .blog-card {
-    &:hover {
-      grid-column: span 3;
-      .blog-card-hidden {
-        display: block;
-        width: 50%;
-        padding: 45px 30px;
-        font-size: 1.125rem;
-        line-height: 2rem;
-        color: $white;
-        z-index: 1000;
+    @media screen and (min-width: $container-s) {
+      &:hover {
+        grid-column: span 2;
+  
+        a {
+          width: 50%;
+        }
+  
+        .blog-card-hidden {
+          display: block;
+          width: 50%;
+          animation: blog-card-appear 300ms ease forwards;
+        }
       }
     }
+
+    @include responsive(xs) {
+      display: flex;
+      flex-direction: column;
+
+      .blog-card-hidden {
+        display: block;
+        width: 100%;
+        flex: 1;
+      }
+    }
+  }
+}
+
+@keyframes blog-card-appear {
+  0% {
+    left: -80%;
+    z-index: -1;
+    opacity: 0;
+  }
+  99% {
+    left: 0;
+    opacity: 1;
+    z-index: -1;
+  }
+  100% {
+    z-index: 1;
   }
 }

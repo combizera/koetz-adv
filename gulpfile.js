@@ -29,9 +29,7 @@ gulp.task("sass", compilaSass);
 // Função para iniciar o Browser
 function browser() {
   browserSync.init({
-    server: {
-      baseDir: "./",
-    },
+    proxy: process.env.URL_LOCAL, // Coloque aqui a URL do site no local
     open: false,
   });
 }
@@ -43,7 +41,7 @@ gulp.task("browser-sync", browser);
 function watch() {
   gulp.watch("assets/css/scss/**/*.scss", gulp.parallel("sass"));
   gulp
-    .watch(["*.html", "**/*.js", "assets/css/*.css"])
+    .watch(["*.php", "*.html", "**/*.js", "assets/css/*.css"])
     .on("change", browserSync.reload);
 }
 

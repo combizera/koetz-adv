@@ -8,6 +8,11 @@
   list-style: none;
   align-items: flex-start;
   margin-bottom: 3.75rem;
+
+  @include responsive(800px) {
+    align-items: center;
+    max-width: 28.75rem;
+  }
 }
 
 .equipe-card {
@@ -51,6 +56,30 @@
     .equipe-info {
       opacity: 1;
       transition: opacity 300ms ease;
+    }
+
+    @include responsive(800px) {
+      width: auto;
+      grid-column: span 2;
+    }
+  }
+}
+
+.equipe-cards-row {
+  display: flex;
+  gap: 1rem;
+
+  .equipe-card {
+    width: 50%;
+    flex: 1;
+    transition: flex 300ms ease;
+
+    &:only-child {
+      flex: 0 calc(50% - 0.5rem);
+    }
+
+    &:hover {
+      flex: 2.5;
     }
   }
 }
