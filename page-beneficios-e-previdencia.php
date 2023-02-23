@@ -9,14 +9,14 @@ get_header(); ?>
     <!-- HERO -->
     <?php include(TEMPLATEPATH . "/assets/inc/hero.php"); ?> 
 
-    <!-- BENEFÍCIOS E PREVIDÊNCIAS -->
+    <!-- BENEFÍCIOS E PREVIDÊNCIAs -->
     <section class="beneficios container">
       
     <!-- MAPPING -->
     <?php include(TEMPLATEPATH . "/assets/inc/mapping.php"); ?> 
 
-      <div class="grid-4 secao">
-        <a href="#" class="areas-card flex-center area-card1">
+      <div class="grid-4 secao beneficios-cards">
+        <a href="#" class="areas-card areas-card1 flex-center area-card1">
           <h3>Aposentadorias
             <br><span class="txt-red"> Gerais</span>
           </h3>
