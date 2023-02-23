@@ -9,6 +9,7 @@
     transition: all 300ms ease;
 
     grid-auto-flow: column;
+    grid-auto-columns: 1fr;
     grid-template-columns: repeat(4, 1fr);
     min-height: 25rem;
     width: 100%;
@@ -28,23 +29,18 @@
 
     &::-webkit-scrollbar-thumb:hover {
       background-color: lighten($red, 20);
-    } 
-    
-    @include responsive(s) {
-      grid-template-columns: repeat(4, minmax(20rem, 1fr));
     }
-  }
-
-  .blog-cards:hover {
-    @media screen and (min-width: $container-s) {
-      gap: 0.5rem;
-      grid-template-columns: repeat(5, minmax(20rem, 1fr));
+    
+    @include responsive($container-l) {
+      grid-auto-columns: minmax(15rem, 1fr);
+      grid-template-columns: repeat(4, minmax(15rem, 1fr));
     }
   }
 
   .blog-card {
     position: relative;
     display: flex;
+    max-height: 25rem;
     
     a {
       position: relative;
@@ -86,6 +82,30 @@
     line-height: 2rem;
     color: $white;
     position: relative;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #f1f1f1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $grey-dark;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: $grey-normal;
+    }
+
+    @media screen and (max-width: 1300px) and (min-width: 1101px) {
+      line-height: 1.75rem;
+      height: 100%;
+      padding: 25px;
+      font-size: 1rem;
+    }
   }
   .blog-card {
     @media screen and (min-width: $container-s) {

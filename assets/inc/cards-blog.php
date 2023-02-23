@@ -50,4 +50,19 @@
     </div>
   </div>
   <a href="#" class="btn btn-pri">Entre em contato</a>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      function handleMouseEnter(e) {
+        e.currentTarget.scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+          inline: 'center'
+        });
+      }
+
+      const $blogCards = document.querySelectorAll('.blog-cards > .blog-card');
+      $blogCards.forEach((card) => card.addEventListener('mouseenter', handleMouseEnter));
+    });
+  </script>
 </section>
