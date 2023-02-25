@@ -23,7 +23,7 @@
       </a>
       <div class="blog-card-hidden">
         <span>Neste texto explicaremos a função do visto do Mercosul, como tirar o visto do Mercosul no Brasil e quais são os requisitos na Polícia Federal. Entenda!</span>
-        <a href="blog.html">Ler mais</a>
+         <a class="btn-ter" href="blog.html">Ler mais</a>
       </div>
     </div>
 
@@ -34,7 +34,7 @@
       </a>
       <div class="blog-card-hidden">
         <span>Neste texto explicaremos a função do visto do Mercosul, como tirar o visto do Mercosul no Brasil e quais são os requisitos na Polícia Federal. Entenda!</span>
-        <a href="blog.html">Ler mais</a>
+         <a class="btn-ter" href="blog.html">Ler mais</a>
       </div>
     </div>
 
@@ -45,7 +45,7 @@
       </a>
       <div class="blog-card-hidden">
         <span>Neste texto explicaremos a função do visto do Mercosul, como tirar o visto do Mercosul no Brasil e quais são os requisitos na Polícia Federal. Entenda!</span>
-        <a href="blog.html">Ler mais</a>
+         <a class="btn-ter" href="blog.html">Ler mais</a>
       </div>
     </div>
   </div>

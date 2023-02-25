@@ -37,7 +37,7 @@
       </div>
 
       <div class="header-icones">
-        <a href="#"></a><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/pesquisar.png" alt="Ícone de Pesquisa">
+        <a href="#"></a><img class="header-seta" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/pesquisar.png" alt="Ícone de Pesquisa">
         <button class="hamburguer" data-modal-menu="abrir"></button>
       </div>
     </div>
