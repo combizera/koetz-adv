@@ -10,11 +10,11 @@
         <li><a href="#">Legalização do Estrangeiro</a></li>
         <li>
           <ul class="header-modal-sociais">
-            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook.svg" alt="Ícone do Facebook da Koetz Advocacia"></a></li>
-            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/instagram.svg" alt="Ícone do Instagram da Koetz Advocacia"></a></li>
-            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/linkedin.svg" alt="Ícone do Linkedin da Koetz Advocacia"></a></li>
-            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/twitter.svg" alt="Ícone do Twitter da Koetz Advocacia"></a></li>
-            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/youtube.svg" alt="Ícone do Youtube da Koetz Advocacia"></a></li>
+            <li><a href="#"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook.svg" alt="Ícone do Facebook da Koetz Advocacia"></a></li>
+            <li><a href="#"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/instagram.svg" alt="Ícone do Instagram da Koetz Advocacia"></a></li>
+            <li><a href="#"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/linkedin.svg" alt="Ícone do Linkedin da Koetz Advocacia"></a></li>
+            <li><a href="#"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/twitter.svg" alt="Ícone do Twitter da Koetz Advocacia"></a></li>
+            <li><a href="#"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/youtube.svg" alt="Ícone do Youtube da Koetz Advocacia"></a></li>
           </ul>
         </li>
       </ul>
@@ -24,7 +24,7 @@
 <footer id="footer" class="container">
     <div class="grid-4">
       <div class="footer-logo">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/logo.png" alt="Logotipo Koetz Advocacia">
+        <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/logo.png" alt="Logotipo Koetz Advocacia">
         <p>Nossos clientes em qualquer lugar do planeta tem acesso rápido às suas informações, mas de maneira segura, sem sair de casa ou do trabalho.</p>
       </div>
 
@@ -64,11 +64,11 @@
         <p class="footer-tit">Siga-nos nas redes sociais</p>
         <nav>
           <ul>
-            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook-dark.svg" alt="Ícone do Facebook da Koetz Advocacia"></a></li>
-            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/instagram-dark.svg" alt="Ícone do Instagram da Koetz Advocacia"></a></li>
-            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/linkedin-dark.svg" alt="Ícone do Linkedin da Koetz Advocacia"></a></li>
-            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/twitter-dark.svg" alt="Ícone do Twitter da Koetz Advocacia"></a></li>
-            <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/youtube-dark.svg" alt="Ícone do Youtube da Koetz Advocacia"></a></li>
+            <li><a href="#"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook-dark.svg" alt="Ícone do Facebook da Koetz Advocacia"></a></li>
+            <li><a href="#"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/instagram-dark.svg" alt="Ícone do Instagram da Koetz Advocacia"></a></li>
+            <li><a href="#"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/linkedin-dark.svg" alt="Ícone do Linkedin da Koetz Advocacia"></a></li>
+            <li><a href="#"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/twitter-dark.svg" alt="Ícone do Twitter da Koetz Advocacia"></a></li>
+            <li><a href="#"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/youtube-dark.svg" alt="Ícone do Youtube da Koetz Advocacia"></a></li>
           </ul>
         </nav>
         <p class="footer-tit">Proteção de dados</p>
@@ -85,7 +85,7 @@
   </footer>
 
   <!-- MEUS SCRIPTS -->
-  <script type="module" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/script.js"></script>
+  <script async type="module" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/js/script.js"></script>
 
   <!-- FOOTER Wordpress -->
   <?php wp_footer(); ?>

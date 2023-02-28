@@ -33,11 +33,11 @@
     <div class="header-main">
       <div class="header-logo">
         <a href="/koetz-adv/home/">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/logo.png" alt="Logotipo Koetz Advocacia"></a>
+          <img loading="lazy" src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/logo-koetz.svg" alt="Logotipo Koetz Advocacia"></a>
       </div>
 
       <div class="header-icones">
-        <a href="#"></a><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/pesquisar.png" alt="Ícone de Pesquisa">
+        <a href="#"></a><img loading="lazy" class="header-seta" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/pesquisar.png" alt="Ícone de Pesquisa">
         <button class="hamburguer" data-modal-menu="abrir"></button>
       </div>
     </div>

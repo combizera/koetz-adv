@@ -1,5 +1,5 @@
 <?php 
-// Template name: Equipe
+// Template name: Equipe (NEW)
 get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

@@ -1,3 +1,12 @@
+/*
+Theme Name:   Neve Child
+Description:  Neve Child Theme
+Author:       Agência Solary
+Author URI:   http://agenciasolary.com.br
+Template:     neve
+Version:      1.2
+Text Domain:  nevechild
+*/
 @charset "UTF-8";
 * {
   padding: 0;
@@ -21,7 +30,6 @@ body {
 .container {
   max-width: 1240px;
   margin: 0 auto;
-  border: 2px solid red;
 }
 @media screen and (max-width: 960px) {
   .container {
@@ -149,7 +157,7 @@ img {
   background-image: url("assets/img/banner_cta.webp");
   padding: 100px 60px;
 }
-#cta-email [type=submit] {
+#cta-email [type="submit"] {
   margin-top: 20px;
   width: 100%;
   padding: 10px;
@@ -159,7 +167,7 @@ img {
   #cta-email {
     padding: 60px 20px;
   }
-  #cta-email [type=submit] {
+  #cta-email [type="submit"] {
     margin-top: 40px;
   }
 }
@@ -247,6 +255,11 @@ img {
 #header .lang .lang-active {
   border: 2px solid #c20000;
 }
+@media screen and (max-width: 960px) {
+  #header .lang {
+    display: none;
+  }
+}
 #header .header-main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -266,6 +279,11 @@ img {
   -ms-flex-align: center;
   align-items: center;
 }
+@media screen and (max-width: 960px) {
+  #header .header-seta {
+    display: none;
+  }
+}
 
 .hamburguer {
   display: block;
@@ -275,6 +293,7 @@ img {
   width: 30px;
   margin-left: 1rem;
   border-radius: 1px;
+  background: none !important;
 }
 
 .hamburguer::after,
@@ -339,7 +358,7 @@ img {
     transform: translate3d(0, 0px, 0);
   }
 }
-[data-modal-menu=container] {
+[data-modal-menu="container"] {
   -webkit-animation: show-modal 0.5s forwards;
   animation: show-modal 0.5s forwards;
   display: none;
@@ -357,7 +376,7 @@ img {
   width: 40%;
   z-index: 2000;
 }
-[data-modal-menu=container] ul {
+[data-modal-menu="container"] ul {
   list-style: none;
   gap: 40px;
   display: -webkit-box;
@@ -368,12 +387,12 @@ img {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-[data-modal-menu=container] a {
+[data-modal-menu="container"] a {
   color: #efefef;
   text-decoration: none;
   text-transform: uppercase;
 }
-[data-modal-menu=container] .header-modal-sociais {
+[data-modal-menu="container"] .header-modal-sociais {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,13 +407,18 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 960px) {
+  .header-modal.active {
+    width: 100%;
+  }
+}
 
 #footer {
   padding: 120px 60px 40px 60px;
 }
 #footer p {
-  font-size: 16px;
-  line-height: 140%;
+  font-size: 16px !important;
+  line-height: 140% !important;
 }
 #footer ul {
   list-style: none;
@@ -412,7 +436,7 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   color: #575757;
-  font-size: 14px;
+  font-size: 14px !important;
 }
 #footer a:hover {
   text-decoration: underline;
@@ -583,7 +607,13 @@ img {
   position: absolute;
   inset: 0;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.67)));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 0.67))
+  );
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.67) 100%);
   z-index: 0;
 }
@@ -593,7 +623,7 @@ img {
   left: 1rem;
   font-weight: 700;
   line-height: 120%;
-  color: #fff;
+  color: #fff !important;
 }
 #home-blog .blog-card img {
   height: 400px;
@@ -709,27 +739,27 @@ img {
 
 h1 {
   text-align: center;
-  text-transform: uppercase;
-  font-weight: 700;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 3.75rem;
-  line-height: 4.25rem;
+  font-size: 2.75rem !important;
+  line-height: 3.5rem !important;
 }
 @media screen and (max-width: 960px) {
   h1 {
     font-family: "Source Sans Pro", sans-serif;
-    font-size: 2.8rem;
-    line-height: 4rem;
+    font-size: 1.75rem !important;
+    line-height: 2.5rem !important;
   }
 }
 
 h2 {
-  font-weight: 700;
-  text-transform: uppercase;
-  margin: 20px 0 35px 0;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  margin: 20px 0 35px 0 !important;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 2.125rem;
-  line-height: 2.625rem;
+  font-size: 2.125rem !important;
+  line-height: 2.625rem !important;
 }
 @media screen and (max-width: 960px) {
   h2 {
@@ -777,12 +807,12 @@ h5 {
 }
 
 h6 {
-  font-weight: 700;
+  font-weight: 700 !important;
   position: relative;
   z-index: 10;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 2.5rem;
-  line-height: 3rem;
+  font-size: 2.5rem !important;
+  line-height: 3rem !important;
 }
 @media screen and (max-width: 960px) {
   h6 {
@@ -794,10 +824,10 @@ h6 {
 
 p {
   font-weight: 400;
-  color: #575757;
+  color: #575757 !important;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.25rem;
-  line-height: 200%;
+  font-size: 1.25rem !important;
+  line-height: 200% !important;
 }
 @media screen and (max-width: 960px) {
   p {
@@ -808,45 +838,45 @@ p {
 }
 
 a {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Sans Pro", sans-serif !important;
   font-size: 1.25rem;
-  line-height: 100%;
+  line-height: 100% !important;
 }
 @media screen and (max-width: 960px) {
   a {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 1.25rem;
     line-height: 100%;
   }
 }
 
 .btn {
-  border: 2px solid #c20000;
-  color: #202020;
+  border: 2px solid #c20000 !important;
+  background-color: #fff0 !important;
+  color: #202020 !important;
   display: inline-block;
-  padding: 20px 100px;
+  padding: 20px 100px !important;
   text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
   letter-spacing: 2px;
+  font-size: 1.25rem !important;
 }
 @media screen and (max-width: 960px) {
   .btn {
-    padding: 20px;
+    padding: 20px !important;
   }
 }
 
 .btn-pri {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease !important;
+  transition: all 0.3s ease !important;
 }
 .btn-pri:after {
   content: "➞";
   margin-left: 10px;
 }
 .btn-pri:hover {
-  background-color: #c20000;
-  color: #fff;
+  background-color: #c20000 !important;
+  color: #fff !important;
 }
 
 .btn-pri-dark {
@@ -901,7 +931,7 @@ a {
 }
 
 .secao-tit {
-  text-align: center;
+  text-align: center !important;
   width: 70%;
 }
 .secao-tit p {
@@ -921,7 +951,7 @@ a {
   background-image: url("assets/img/banner_cta.webp");
   padding: 100px 60px;
 }
-#cta-email [type=submit] {
+#cta-email [type="submit"] {
   margin-top: 20px;
   width: 100%;
   padding: 10px;
@@ -931,7 +961,7 @@ a {
   #cta-email {
     padding: 60px 20px;
   }
-  #cta-email [type=submit] {
+  #cta-email [type="submit"] {
     margin-top: 40px;
   }
 }
@@ -1029,7 +1059,7 @@ a {
 }
 .citacao p {
   margin-top: 40px;
-  color: #fff;
+  color: #fff !important;
 }
 @media screen and (max-width: 960px) {
   .citacao {
@@ -1075,8 +1105,12 @@ a {
   }
 }
 
+.areas-cards {
+  width: 100% !important;
+}
+
 .areas-cards a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: inherit;
 }
 .areas-cards .areas-card {
@@ -1139,6 +1173,10 @@ a {
   margin: 0 auto;
   max-width: 92.5rem;
   padding-bottom: 2rem;
+}
+
+.equipe p {
+  color: #fff !important;
 }
 
 .equipe-cards {
@@ -1349,7 +1387,8 @@ a {
   font-size: 30px;
   -webkit-transform-origin: left center;
   transform-origin: left center;
-  -webkit-transform: rotate(-90deg) translateY(calc(50% + 5px)) translateX(-1rem);
+  -webkit-transform: rotate(-90deg) translateY(calc(50% + 5px))
+    translateX(-1rem);
   transform: rotate(-90deg) translateY(calc(50% + 5px)) translateX(-1rem);
   -webkit-transition: -webkit-transform 300ms ease;
   transition: -webkit-transform 300ms ease;
@@ -1524,7 +1563,13 @@ a {
   position: absolute;
   inset: 0;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#000));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 0)),
+    to(#000)
+  );
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, #000 100%);
 }
 .blog .hero-txt {

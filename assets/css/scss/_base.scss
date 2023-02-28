@@ -64,7 +64,7 @@ body {
 .container {
   max-width: $container-xl;
   margin: 0 auto;
-  border: 2px solid red;
+  // border: 2px solid red;
 
   @include responsive(s) {
     flex-direction: column;

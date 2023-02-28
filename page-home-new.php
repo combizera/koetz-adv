@@ -1,6 +1,6 @@
 <?php 
-// Template name: Home
-get_header(); ?>
+// Template name: Home New
+get_header("2023"); ?>
 
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -97,37 +97,37 @@ get_header(); ?>
       <ul class="equipe-cards grid-5">
         <!-- CARD 1 | MARCELA -->
         <li class="equipe-card">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/eduardo-koetz.png" alt="Eduardo Koetz">
+          <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/marcela.webp" alt="Marcela Cunha">
           <div class="equipe-nome">
             <span>
-              <strong class="equipe-nome__icon">+</strong> Eduardo Koetz
+              <strong class="equipe-nome__icon">+</strong> Marcela Cunha
             </span>
           </div>
           <div class="equipe-info">
             <p>
-              Advogado, professor e fundador da Koetz Advocacia, especialista em Direito Previdenciário, do Trabalho, Tributário e Gestão de escritório. Sua função é de gestor da Koetz Advocacia, supervisionando e auxiliando em todos os setores.
+            Advogada especialista em Direito Previdenciário com mais de 10 anos de experiência. Atua hoje no gerenciamento da equipe no setor de contratação e atendimento aos novos clientes.
             </p>
           </div>
         </li>
 
         <!-- CARD 2 | MURILO -->
         <li class="equipe-card">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/eduardo-koetz.png" alt="Eduardo Koetz">
+          <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/murilo.webp" alt="Murilo Mella">
           <div class="equipe-nome">
             <span>
-              <strong class="equipe-nome__icon">+</strong> Eduardo Koetz
+              <strong class="equipe-nome__icon">+</strong> Murilo Mella
             </span>
           </div>
           <div class="equipe-info">
             <p>
-              Advogado, professor e fundador da Koetz Advocacia, especialista em Direito Previdenciário, do Trabalho, Tributário e Gestão de escritório. Sua função é de gestor da Koetz Advocacia, supervisionando e auxiliando em todos os setores.
+            Advogado especialista em Direito Previdenciário, processual e constitucional com mais de 10 anos de experiência. Atua hoje no gerenciamento de equipe técnica-jurídica e na área recursal para o Supremo Tribunal Federal.
             </p>
           </div>
         </li>
 
         <!-- CARD 3 | EDUARDO -->
         <li class="equipe-card">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/eduardo-koetz.png" alt="Eduardo">
+          <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/eduardo-koetz.png" alt="Eduardo">
           <div class="equipe-nome">
             <span>
               <strong class="equipe-nome__icon">+</strong> Eduardo Koetz
@@ -142,30 +142,30 @@ get_header(); ?>
 
         <!-- CARD 4 | GABRIELA -->
         <li class="equipe-card">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/eduardo-koetz.png" alt="Eduardo Koetz">
+          <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/gabriela.webp" alt="Gabriela Carlotto">
           <div class="equipe-nome">
             <span>
-              <strong class="equipe-nome__icon">+</strong> Eduardo Koetz
+              <strong class="equipe-nome__icon">+</strong> Gabriela Carlotto
             </span>
           </div>
           <div class="equipe-info">
             <p>
-              Advogado, professor e fundador da Koetz Advocacia, especialista em Direito Previdenciário, do Trabalho, Tributário e Gestão de escritório. Sua função é de gestor da Koetz Advocacia, supervisionando e auxiliando em todos os setores.
+            Advogada especialista em Direito Previdenciário com foco em Comunicação não violenta e psicologia no atendimento ao público. Atua hoje no gerenciamento da equipe de atendimento ao cliente previdenciário do escritório.
             </p>
           </div>
         </li>
 
         <!-- CARD 5 | LEANDRO -->
         <li class="equipe-card">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/eduardo-koetz.png" alt="Eduardo Koetz">
+          <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/leandro.webp" alt="Leandro Sturmer">
           <div class="equipe-nome">
             <span>
-              <strong class="equipe-nome__icon">+</strong> Eduardo Koetz
+              <strong class="equipe-nome__icon">+</strong> Leandro Sturmer
             </span>
           </div>
           <div class="equipe-info">
             <p>
-              Advogado, professor e fundador da Koetz Advocacia, especialista em Direito Previdenciário, do Trabalho, Tributário e Gestão de escritório. Sua função é de gestor da Koetz Advocacia, supervisionando e auxiliando em todos os setores.
+            Advogado especialista em Direito Previdenciário com atuação no setor de produção jurídica e análise probatória. Atua hoje garantindo altas taxas de vitória nos processos judiciais do escritório e gerenciando o trabalho da equipe de advogados.
             </p>
           </div>
         </li>
@@ -180,7 +180,7 @@ get_header(); ?>
       </ul>
       <a href="#" class="btn btn-pri">Entre em contato</a>
 
-      <script>
+      <script defer>
         document.addEventListener('DOMContentLoaded', function () {
           const $equipeCards = Array.from(document.querySelectorAll('.equipe-card'));
           const $container = document.querySelector('.equipe-cards');
@@ -239,7 +239,8 @@ get_header(); ?>
     </section>
 
     <!-- CARDS BLOG -->
-    <?php include(TEMPLATEPATH . "/assets/inc/cards-blog.php"); ?> 
+    <?php include(STYLESHEETPATH
+ . "/assets/inc/cards-blog.php"); ?> 
 
     <!-- NA MÍDIA -->
     <section id="na-midia" class="midia container secao flex-center">
@@ -256,12 +257,11 @@ get_header(); ?>
     </section>
 
     <!-- CTA EMAIL -->
-    <?php include(TEMPLATEPATH . "/assets/inc/cta-email.php"); ?> 
+    <?php include(STYLESHEETPATH
+    . "/assets/inc/cta-email.php"); ?> 
 
   </main>
 
   <?php endwhile; else: endif; ?>
 
-
-<!-- Para pegar o Footer -->
-<?php get_footer(); ?>
+<?php get_footer("2023"); ?>

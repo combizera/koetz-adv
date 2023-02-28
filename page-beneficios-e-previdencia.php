@@ -1,5 +1,5 @@
 <?php 
-// Template name: Benefícios e Previdência
+// Template name: Benefícios e Previdência (NEW)
 get_header(); ?>
 
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

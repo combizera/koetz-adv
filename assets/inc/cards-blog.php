@@ -7,7 +7,7 @@
   <div class="blog-cards">
     <div class="blog-card">
       <a href="#">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/post1.png" alt="Postagem 1">
+        <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/post1.png" alt="Postagem 1">
         <p>Visto Mercosul no Brasil: isenções, regras, residência e mais.</p>
       </a>
       <div class="blog-card-hidden">
@@ -18,40 +18,40 @@
 
     <div class="blog-card">
       <a href="#" class="blog-card">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/post2.png" alt="Postagem 2">
+        <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/post2.png" alt="Postagem 2">
         <p>Aposentados do INSS: direitos, atrasados e revisão de benefício.</p>
       </a>
       <div class="blog-card-hidden">
         <span>Neste texto explicaremos a função do visto do Mercosul, como tirar o visto do Mercosul no Brasil e quais são os requisitos na Polícia Federal. Entenda!</span>
-        <a href="blog.html">Ler mais</a>
+         <a class="btn-ter" href="blog.html">Ler mais</a>
       </div>
     </div>
 
     <div class="blog-card">
       <a href="#" class="blog-card">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/post3.png" alt="Postagem 3">
+        <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/post3.png" alt="Postagem 3">
         <p>Aposentadoria Rural hoje: quais os requisitos do INSS?</p>
       </a>
       <div class="blog-card-hidden">
         <span>Neste texto explicaremos a função do visto do Mercosul, como tirar o visto do Mercosul no Brasil e quais são os requisitos na Polícia Federal. Entenda!</span>
-        <a href="blog.html">Ler mais</a>
+         <a class="btn-ter" href="blog.html">Ler mais</a>
       </div>
     </div>
 
     <div class="blog-card">
       <a href="#" class="blog-card">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/post4.png" alt="Postagem 4">
+        <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/post4.png" alt="Postagem 4">
         <p>Revisão do Artigo 29: aposentadoria por invalidez e auxílio…</p>
       </a>
       <div class="blog-card-hidden">
         <span>Neste texto explicaremos a função do visto do Mercosul, como tirar o visto do Mercosul no Brasil e quais são os requisitos na Polícia Federal. Entenda!</span>
-        <a href="blog.html">Ler mais</a>
+         <a class="btn-ter" href="blog.html">Ler mais</a>
       </div>
     </div>
   </div>
   <a href="#" class="btn btn-pri">Entre em contato</a>
 
-  <script>
+  <script defer>
     document.addEventListener('DOMContentLoaded', function () {
       function handleMouseEnter(e) {
         e.currentTarget.scrollIntoView({

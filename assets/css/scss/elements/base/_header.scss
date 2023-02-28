@@ -18,6 +18,9 @@
     .lang-active {
       border: 2px solid $red;
     }
+    @include responsive(s) {
+      display: none;
+    }
   }
   .header-main {
     display: flex;
@@ -29,6 +32,12 @@
   .header-icones {
     display: flex;
     align-items: center;
+  }
+
+  .header-seta {
+    @include responsive(s) {
+      display: none;
+    }
   }
 }
 
@@ -123,4 +132,7 @@
 }
 .header-modal.active {
   display: flex;
+  @include responsive(s) {
+    width: 100%;
+  }
 }
