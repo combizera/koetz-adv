@@ -10,13 +10,15 @@ function get_template_name() {
   $templates = wp_get_theme()->get_page_templates();
   return strtolower( $templates[$template_file] );
 }
-add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles', 11 );
+
 function my_theme_enqueue_styles() {
-  if (get_template_name() !== "home new"){
-    wp_enqueue_style( 'child-style',
-        get_stylesheet_uri(),
-        array( 'parenthandle' )
-    );}
+  		if (get_template_name() === 'home new'){
+		wp_dequeue_style('neve-style');
+		}
+	wp_enqueue_style( 'child-style',
+        get_stylesheet_uri() . '/style.css',
+        array( 'parenthandle' ), null);
 }
 
 

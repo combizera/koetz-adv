@@ -24,7 +24,7 @@
 <footer id="footer" class="container">
     <div class="grid-4">
       <div class="footer-logo">
-        <img loading="lazy" src="<<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/logo-koetz.svg" alt="Logotipo Koetz Advocacia">
+        <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/logo-koetz.svg" alt="Logotipo Koetz Advocacia">
         <p>Nossos clientes em qualquer lugar do planeta tem acesso rápido às suas informações, mas de maneira segura, sem sair de casa ou do trabalho.</p>
       </div>
 
