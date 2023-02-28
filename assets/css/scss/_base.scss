@@ -1,3 +1,12 @@
+/*
+Theme Name:   Neve Child
+Description:  Neve Child Theme
+Author:       Agência Solary
+Author URI:   http://agenciasolary.com.br
+Template:     neve
+Version:      1.2
+Text Domain:  nevechild
+*/
 * {
   padding: 0;
   margin: 0;
@@ -129,20 +138,8 @@ img {
   grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
 
-  @include responsive(1400px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
   @include responsive(s) {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  @include responsive(800px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 }
 

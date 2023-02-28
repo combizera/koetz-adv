@@ -1,4 +1,4 @@
-<?php 
+<?php
 // Template name: Home New
 get_header("2023"); ?>
 
@@ -94,7 +94,7 @@ get_header("2023"); ?>
         <p>Conheça os Líderes de Nossa Equipe</p>
         <h2>Vidas<span class="txt-red"> Dedicadas a luta</span> Por concretizar os direitos das pessoas.</h2>
       </div>
-      <ul class="equipe-cards grid-5">
+      <ul class="equipe-cards">
         <!-- CARD 1 | MARCELA -->
         <li class="equipe-card">
           <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/marcela.webp" alt="Marcela Cunha">
@@ -240,7 +240,7 @@ get_header("2023"); ?>
 
     <!-- CARDS BLOG -->
     <?php include(STYLESHEETPATH
- . "/assets/inc/cards-blog.php"); ?> 
+ . "/assets/inc/cards-blog.php"); ?>
 
     <!-- NA MÍDIA -->
     <section id="na-midia" class="midia container secao flex-center">
@@ -258,7 +258,7 @@ get_header("2023"); ?>
 
     <!-- CTA EMAIL -->
     <?php include(STYLESHEETPATH
-    . "/assets/inc/cta-email.php"); ?> 
+    . "/assets/inc/cta-email.php"); ?>
 
   </main>
 

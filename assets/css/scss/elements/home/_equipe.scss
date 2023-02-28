@@ -5,22 +5,32 @@
 }
 
 .equipe-cards {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
   list-style: none;
   align-items: flex-start;
   margin-bottom: 3.75rem;
 
+  @include responsive(s) {
+    gap: 0.5rem;
+    overflow: hidden;
+  }
+
   @include responsive(800px) {
     align-items: center;
     max-width: 28.75rem;
+    flex-direction: column;
+    gap: 1rem;
   }
 }
 
 .equipe-card {
   position: relative;
-  width: 14rem;
+  flex: 1;
   height: 40.625rem;
   background-color: $grey-dark;
-  transition: width 300ms ease;
+  transition: flex 300ms ease;
 
   img {
     display: block;
@@ -55,6 +65,7 @@
 
     .equipe-info {
       opacity: 1;
+      visibility: visible;
       transition: opacity 300ms ease;
     }
 
@@ -70,29 +81,29 @@
     }
 
     &:hover {
-      width: 22rem;
-  
+      flex: 18rem;
+
       &::before {
         opacity: 1;
       }
-  
+
       .equipe-nome {
         top: 1.25rem;
         transform: translateY(0);
-  
+
         span {
           transform: none;
         }
       }
-  
+
       .equipe-info {
         opacity: 1;
+        visibility: visible;
         transition: opacity 300ms ease;
       }
-  
-      @include responsive(800px) {
-        width: auto;
-        grid-column: span 2;
+
+      @include responsive(s) {
+        flex: 14rem;
       }
     }
   }
@@ -136,7 +147,7 @@
         flex-direction: column;
         justify-content: center;
       }
-      
+
       h3 {
         text-transform: uppercase;
         font-size: 24px;
@@ -223,11 +234,13 @@
 }
 
 .equipe-info {
+  width: 100%;
   position: absolute;
   top: calc(2.5rem + 7rem);
 
   font-size: 1.125rem;
   color: $white;
+  visibility: hidden;
   opacity: 0;
   padding: 0 2rem;
   transition: opacity 200ms ease;
