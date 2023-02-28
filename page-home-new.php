@@ -127,7 +127,7 @@ get_header("2023"); ?>
 
         <!-- CARD 3 | EDUARDO -->
         <li class="equipe-card">
-          <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/eduardo-koetz.png" alt="Eduardo">
+          <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/eduardo.webp" alt="Eduardo">
           <div class="equipe-nome">
             <span>
               <strong class="equipe-nome__icon">+</strong> Eduardo Koetz
@@ -242,17 +242,17 @@ get_header("2023"); ?>
     <?php include(STYLESHEETPATH
  . "/assets/inc/cards-blog.php"); ?>
 
-    <!-- NA MÍDIA -->
-    <section id="na-midia" class="midia container secao flex-center">
+     <!-- NA MÍDIA -->
+     <section id="na-midia" class="midia container secao flex-center">
       <div class="secao-tit">
         <p>Fique por Dentro!</p>
         <h2>A Koetz Advocacia na <span class="txt-red">Mídia</span></h2>
       </div>
       <div class="midia-cards grid-4">
-        <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/Imagem 2.svg" alt="Folha de SP"></a>
-        <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/Imagem 2.svg" alt="Folha de SP"></a>
-        <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/Imagem 2.svg" alt="Folha de SP"></a>
-        <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/Imagem 2.svg" alt="Folha de SP"></a>
+        <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/folha-de-sao-paulo.svg" alt="Folha de SP"></a>
+        <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/conjur.webp" alt="Conjur"></a>
+        <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/o-globo.webp" alt="O Globo"></a>
+        <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/veja.svg" alt="Revista Veja"></a>
       </div>
     </section>
 
