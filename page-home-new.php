@@ -7,45 +7,50 @@ get_header("2023"); ?>
   <!-- MAIN -->
   <main>
     <!-- HERO -->
+		<?php
+		$hero = get_field('hero');
+			if( $hero ): ?>
     <section class="hero flex-center">
       <div class="hero-txt flex-center container">
         <h1>Atendemos qualquer pessoa em qualquer lugar do <span class="txt-red"> mundo</span>!</h1>
-        <a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/" class="btn btn-pri">Entre em contato</a>
+        <a target"_blank" href="<?php echo $hero['link_cta_principal']; ?>" class="btn btn-pri"><?php echo $hero['texto_cta_principal']; ?></a>
       </div>
+		<?php endif; ?>
     </section>
 
     <!-- CITAÇÃO -->
     <article id="citacao" class="bg-red">
+		<?php
+		$citacao = get_field('citacao');
+			if( $citacao ): ?>
       <div class="citacao flex-center container ">
         <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/martin_luther_jr.webp" alt="martin_luther_jr">
         <div>
-          <h6><span class="aspas">“</span> Injustiça em qualquer lugar é uma ameaça a justiça em todo mundo.</h6>
-          <p> - Martin Luther King Jr.</p>
+          <h6><span class="aspas">“</span><?php echo $citacao['texto']; ?> </h6>
+          <p> - <?php echo $citacao['autor']; ?></p>
         </div>
       </div>
+		<?php endif; ?>
     </article>
 
     <!-- SOLUÇÕES -->
     <section id="solucoes" class="solucoes secao container flex-center">
+		<?php
+		$solucoes = get_field('solucoes');
+			if( $solucoes ): ?>
       <div class="solucoes-container grid-2">
         <div class="solucoes-txt">
           <div class="secao-tit">
             <p>Koetz Advocacia</p>
             <h2>Soluções Simples e <span class="txt-red"> Inteligentes</span> para Questões Complexas.</h2>
           </div>
-          <p>Temos prazer em assumir casos complexos e difíceis, e mergulhar na
-            busca da solução, pois confiamos muito no preparo da nossa equipe.
-            <br><br>
-            Nosso escritório é referência em inovação e tecnologia, mas nós
-            acreditamos que precisamos ir muito além.
-            Construir uma advocacia voltada para as pessoas e empresas
-            que trabalham e produzem, e merecem respeito aos seus direitos.
-          </p>
+          <p><?php echo $solucoes['texto']; ?></p>
         </div>
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/globo.webp" alt="Globo">
       </div>
-      <a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/" class="btn btn-pri">Entre em contato</a>
-    </section>
+      <a href="<?php echo $solucoes['link']; ?>" class="btn btn-pri"><?php echo $solucoes['cta']; ?></a>
+    <?php endif; ?>
+	  </section>
 
     <!-- ÁREAS DE ATUAÇÃO -->
     <section id="areas" class="areas container secao flex-center">
@@ -83,9 +88,13 @@ get_header("2023"); ?>
 
     <!-- ARTICLE -->
     <article id="citacao2" class="bg-red flex-center">
+		<?php
+		$citacao_2 = get_field('citacao_2');
+			if( $citacao_2 ): ?>
       <div class="container">
-        <h2>QUANDO O ESTADO E O MERCADO DESRESPEITAM A LEI, SÃO OS ADVOGADOS QUE SOCORREM AS PESSOAS.</h2>
+        <h2><?php echo $citacao_2['texto']; ?></h2>
       </div>
+		<?php endif; ?>
     </article>
 
     <!-- NOSSA EQUIPE -->
