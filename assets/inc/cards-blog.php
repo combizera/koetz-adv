@@ -6,50 +6,50 @@
   </div>
   <div class="blog-cards">
     <div class="blog-card">
-      <a href="#">
-        <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/post1.png" alt="Postagem 1">
-        <p>Visto Mercosul no Brasil: isenções, regras, residência e mais.</p>
+      <a href="https://koetzadvocacia.com.br/tabela-de-profissoes-para-aposentadoria-especial/">
+        <img loading="lazy" src="<?php the_field('home-blog-ft1'); ?>" alt="Postagem 1">
+        <p>Aposentadoria Especial: vantagens e quem tem direito?</p>
       </a>
       <div class="blog-card-hidden">
-        <span>Neste texto explicaremos a função do visto do Mercosul, como tirar o visto do Mercosul no Brasil e quais são os requisitos na Polícia Federal. Entenda!</span>
-        <a class="btn-ter" href="blog.html">Ler mais</a>
+        <span>É possível ter uma tabela de profissões para aposentadoria especial? Apenas para períodos anteriores a 04/1995.</span>
+        <a class="btn-ter" href="https://koetzadvocacia.com.br/tabela-de-profissoes-para-aposentadoria-especial/">Ler mais</a>
       </div>
     </div>
 
     <div class="blog-card">
-      <a href="#" class="blog-card">
-        <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/post2.png" alt="Postagem 2">
-        <p>Aposentados do INSS: direitos, atrasados e revisão de benefício.</p>
+      <a href="https://koetzadvocacia.com.br/aposentadoria-hoje/" class="blog-card">
+        <img loading="lazy" src="<?php the_field('home-blog-ft2'); ?>" alt="Postagem 2">
+        <p>Novas Aposentadorias: regras vigentes hoje! </p>
       </a>
       <div class="blog-card-hidden">
-        <span>Neste texto explicaremos a função do visto do Mercosul, como tirar o visto do Mercosul no Brasil e quais são os requisitos na Polícia Federal. Entenda!</span>
-         <a class="btn-ter" href="blog.html">Ler mais</a>
+        <span>Quem não tem um sonho de conquistar a sua aposentadoria hoje? Muitos brasileiros aguardam por esse momento! Mas muita gente ainda fala que hoje em dia não é mais possível. Mas eu te digo: ainda é!</span>
+         <a class="btn-ter" href="https://koetzadvocacia.com.br/aposentadoria-hoje/">Ler mais</a>
       </div>
     </div>
 
     <div class="blog-card">
-      <a href="#" class="blog-card">
-        <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/post3.png" alt="Postagem 3">
-        <p>Aposentadoria Rural hoje: quais os requisitos do INSS?</p>
+      <a href="https://koetzadvocacia.com.br/modalidades-de-autorizacao-de-residencia-com-prazo-determinado/" class="blog-card">
+        <img loading="lazy" src="<?php the_field('home-blog-ft3'); ?>" alt="Postagem 3">
+        <p>Autorização de Residência para estrangeiros no Brasil</p>
       </a>
       <div class="blog-card-hidden">
-        <span>Neste texto explicaremos a função do visto do Mercosul, como tirar o visto do Mercosul no Brasil e quais são os requisitos na Polícia Federal. Entenda!</span>
-         <a class="btn-ter" href="blog.html">Ler mais</a>
+        <span>Quem deseja morar no Brasil, em geral, vai precisar solicitar alguma das modalidades de autorização de  residência com prazo determinado.</span>
+         <a class="btn-ter" href="https://koetzadvocacia.com.br/modalidades-de-autorizacao-de-residencia-com-prazo-determinado/">Ler mais</a>
       </div>
     </div>
 
     <div class="blog-card">
-      <a href="#" class="blog-card">
-        <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/post4.png" alt="Postagem 4">
-        <p>Revisão do Artigo 29: aposentadoria por invalidez e auxílio…</p>
+      <a href="https://koetzadvocacia.com.br/visto-de-investidor/" class="blog-card">
+        <img loading="lazy" src="<?php the_field('home-blog-ft4'); ?>" alt="Postagem 4">
+        <p>Golden Visa: oportunidades para investir no Brasil</p>
       </a>
       <div class="blog-card-hidden">
         <span>Neste texto explicaremos a função do visto do Mercosul, como tirar o visto do Mercosul no Brasil e quais são os requisitos na Polícia Federal. Entenda!</span>
-         <a class="btn-ter" href="blog.html">Ler mais</a>
+         <a class="btn-ter" href="https://koetzadvocacia.com.br/visto-de-investidor/">Ler mais</a>
       </div>
     </div>
   </div>
-  <a href="#" class="btn btn-pri">Entre em contato</a>
+  <a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/" class="btn btn-pri">Entre em contato</a>
 
   <script defer>
     document.addEventListener('DOMContentLoaded', function () {

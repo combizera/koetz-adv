@@ -5,8 +5,9 @@
   Author:       Agência Solary
   Author URI:   http://agenciasolary.com.br
   Template:     neve
-  Version:      1.2
+  Version:      1.4
   Text Domain:  nevechild
+  Data: 02.03.23
 */
 * {
   padding: 0;
@@ -997,9 +998,17 @@ a {
 
 #na-midia .midia-cards {
   padding-top: 60px;
+  align-items: center;
 }
+
+.midia-cards a {
+  display: flex;
+  justify-content: center;
+}
+
 #na-midia .midia-cards img {
   max-width: 100%;
+  max-height: 70px;
   -o-object-fit: cover;
   object-fit: cover;
   -webkit-transition: 0.3s;

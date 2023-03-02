@@ -10,7 +10,7 @@ get_header("2023"); ?>
     <section class="hero flex-center">
       <div class="hero-txt flex-center container">
         <h1>Atendemos qualquer pessoa em qualquer lugar do <span class="txt-red"> mundo</span>!</h1>
-        <a href="#" class="btn btn-pri">Entre em contato</a>
+        <a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/" class="btn btn-pri">Entre em contato</a>
       </div>
     </section>
 
@@ -44,7 +44,7 @@ get_header("2023"); ?>
         </div>
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/globo.webp" alt="Globo">
       </div>
-      <a href="#" class="btn btn-pri">Entre em contato</a>
+      <a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/" class="btn btn-pri">Entre em contato</a>
     </section>
 
     <!-- ÁREAS DE ATUAÇÃO -->
@@ -54,27 +54,27 @@ get_header("2023"); ?>
         <h2>Frentes de <span class="txt-red"> Atuação</span></h2>
       </div>
       <div class="areas-cards grid-4">
-        <a href="#" class="areas-card flex-center area-card1">
+        <a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/" class="areas-card flex-center area-card1">
           <h3>Benefícios &
             <br><span class="txt-red"> Previdência</span>
           </h3>
           <p class="areas-seta">➞</p>
         </a>
-        <a href="#" class="areas-card flex-center area-card2">
+        <a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/" class="areas-card flex-center area-card2">
           <h3>Tributos
             <br><span class="txt-red">Pessoais</span>
           </h3>
           <p class="areas-seta">➞</p>
         </a>
-        <a href="#" class="areas-card flex-center area-card3">
-          <h3>Migração e
-            <br><span class="txt-red">legalização de estrangeiros</span>
+        <a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/" class="areas-card flex-center area-card3">
+          <h3>Trabalho e
+            <br><span class="txt-red">migração</span>
           </h3>
           <p class="areas-seta">➞</p>
         </a>
-        <a href="#" class="areas-card flex-center area-card4">
-          <h3>Direito internacional
-            <br><span class="txt-red">empresarial e tributário</span>
+        <a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/" class="areas-card flex-center area-card4">
+          <h3>Legalização
+            <br><span class="txt-red">do estrangeiro</span>
           </h3>
           <p class="areas-seta">➞</p>
         </a>
@@ -178,7 +178,7 @@ get_header("2023"); ?>
           </div>
         </li>
       </ul>
-      <a href="#" class="btn btn-pri">Entre em contato</a>
+      <a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/" class="btn btn-pri">Entre em contato</a>
 
       <script defer>
         document.addEventListener('DOMContentLoaded', function () {
@@ -249,10 +249,10 @@ get_header("2023"); ?>
         <h2>A Koetz Advocacia na <span class="txt-red">Mídia</span></h2>
       </div>
       <div class="midia-cards grid-4">
-        <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/folha-de-sao-paulo.svg" alt="Folha de SP"></a>
-        <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/conjur.webp" alt="Conjur"></a>
-        <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/o-globo.webp" alt="O Globo"></a>
-        <a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/veja.svg" alt="Revista Veja"></a>
+        <a href="https://www1.folha.uol.com.br/mercado/2018/11/crise-no-emprego-eleva-em-14-milhao-o-numero-de-consultas-psiquiatricas.shtml"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/folha-de-sao-paulo.svg" alt="Folha de SP"></a>
+        <a href="https://www.conjur.com.br/2018-set-25/koetz-advocacia-primeiro-escritorio-100-digital-pais"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/conjur.webp" alt="Conjur"></a>
+        <a href="https://oglobo.globo.com/economia/aposentado-que-vive-no-exterior-consegue-barrar-desconto-de-25-de-ir-23100200"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/o-globo.webp" alt="O Globo"></a>
+        <a href="https://veja.abril.com.br/economia/aposentados-que-moram-fora-conseguem-se-livrar-de-desconto-de-ir-de-25/"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/veja.svg" alt="Revista Veja"></a>
       </div>
     </section>
 
