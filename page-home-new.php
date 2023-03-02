@@ -67,14 +67,14 @@ get_header("2023"); ?>
           <p class="areas-seta">➞</p>
         </a>
         <a href="#" class="areas-card flex-center area-card3">
-          <h3>Trabalho e
-            <br><span class="txt-red">migração</span>
+          <h3>Migração e
+            <br><span class="txt-red">legalização de estrangeiros</span>
           </h3>
           <p class="areas-seta">➞</p>
         </a>
         <a href="#" class="areas-card flex-center area-card4">
-          <h3>Legalização
-            <br><span class="txt-red">do estrangeiro</span>
+          <h3>Direito internacional
+            <br><span class="txt-red">empresarial e tributário</span>
           </h3>
           <p class="areas-seta">➞</p>
         </a>

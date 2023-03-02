@@ -5,7 +5,7 @@
   Author:       Agência Solary
   Author URI:   http://agenciasolary.com.br
   Template:     neve
-  Version:      1.4
+  Version:      1.2
   Text Domain:  nevechild
 */
 * {
@@ -715,8 +715,8 @@ h1 {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 3.75rem;
-  line-height: 4.25rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
 }
 @media screen and (max-width: 960px) {
   h1 {
