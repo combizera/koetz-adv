@@ -99,6 +99,9 @@ get_header("2023"); ?>
 
     <!-- NOSSA EQUIPE -->
     <section class="equipe secao flex-center container">
+		<?php
+		$equipe = get_field('equipe');
+			if( $equipe ): ?>
       <div class="secao-tit">
         <p>Conheça os Líderes de Nossa Equipe</p>
         <h2>Vidas<span class="txt-red"> Dedicadas a luta</span> Por concretizar os direitos das pessoas.</h2>
@@ -109,13 +112,11 @@ get_header("2023"); ?>
           <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/marcela.webp" alt="Marcela Cunha">
           <div class="equipe-nome">
             <span>
-              <strong class="equipe-nome__icon">+</strong> Marcela Cunha
+              <strong class="equipe-nome__icon">+</strong><?php echo $equipe['equipe-nome-1']; ?>
             </span>
           </div>
           <div class="equipe-info">
-            <p>
-            Advogada especialista em Direito Previdenciário com mais de 10 anos de experiência. Atua hoje no gerenciamento da equipe no setor de contratação e atendimento aos novos clientes.
-            </p>
+            <p><?php echo $equipe['equipe-texto-1']; ?></p>
           </div>
         </li>
 
@@ -124,13 +125,11 @@ get_header("2023"); ?>
           <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/murilo.webp" alt="Murilo Mella">
           <div class="equipe-nome">
             <span>
-              <strong class="equipe-nome__icon">+</strong> Murilo Mella
+              <strong class="equipe-nome__icon">+</strong> <?php echo $equipe['equipe-nome-2']; ?>
             </span>
           </div>
           <div class="equipe-info">
-            <p>
-            Advogado especialista em Direito Previdenciário, processual e constitucional com mais de 10 anos de experiência. Atua hoje no gerenciamento de equipe técnica-jurídica e na área recursal para o Supremo Tribunal Federal.
-            </p>
+            <p><?php echo $equipe['equipe-texto-2']; ?></p>
           </div>
         </li>
 
@@ -139,13 +138,11 @@ get_header("2023"); ?>
           <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/eduardo.webp" alt="Eduardo">
           <div class="equipe-nome">
             <span>
-              <strong class="equipe-nome__icon">+</strong> Eduardo Koetz
+              <strong class="equipe-nome__icon">+</strong> <?php echo $equipe['equipe-nome-3']; ?>
             </span>
           </div>
           <div class="equipe-info">
-            <p>
-              Advogado, professor e fundador da Koetz Advocacia, especialista em Direito Previdenciário, do Trabalho, Tributário e Gestão de escritório. Sua função é de gestor da Koetz Advocacia, supervisionando e auxiliando em todos os setores.
-            </p>
+            <p><?php echo $equipe['equipe-texto-3']; ?></p>
           </div>
         </li>
 
@@ -154,13 +151,11 @@ get_header("2023"); ?>
           <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/gabriela.webp" alt="Gabriela Carlotto">
           <div class="equipe-nome">
             <span>
-              <strong class="equipe-nome__icon">+</strong> Gabriela Carlotto
+              <strong class="equipe-nome__icon">+</strong> <?php echo $equipe['equipe-nome-4']; ?>
             </span>
           </div>
           <div class="equipe-info">
-            <p>
-            Advogada especialista em Direito Previdenciário com foco em Comunicação não violenta e psicologia no atendimento ao público. Atua hoje no gerenciamento da equipe de atendimento ao cliente previdenciário do escritório.
-            </p>
+            <p><?php echo $equipe['equipe-texto-4']; ?></p>
           </div>
         </li>
 
@@ -169,21 +164,19 @@ get_header("2023"); ?>
           <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/leandro.webp" alt="Leandro Sturmer">
           <div class="equipe-nome">
             <span>
-              <strong class="equipe-nome__icon">+</strong> Leandro Sturmer
+              <strong class="equipe-nome__icon">+</strong> <?php echo $equipe['equipe-nome-5']; ?>
             </span>
           </div>
           <div class="equipe-info">
-            <p>
-            Advogado especialista em Direito Previdenciário com atuação no setor de produção jurídica e análise probatória. Atua hoje garantindo altas taxas de vitória nos processos judiciais do escritório e gerenciando o trabalho da equipe de advogados.
-            </p>
+            <p><?php echo $equipe['equipe-texto-5']; ?></p>
           </div>
         </li>
 
         <li class="equipe-card equipe-card--more">
           <div>
-            <h3>Conheça o restante de nossa equipe</h3>
-            <p>Exemplo de um serviço jurídico cada vez melhor, para um público cada vez maior, com mais qualidade.</p>
-            <a href="#">Ver mais</a>
+            <h3><?php echo $equipe['card-mobile-titulo']; ?></h3>
+            <p><?php echo $equipe['card-mobile-texto']; ?></p>
+            <a href="<?php echo $equipe['card-mobile-link']; ?>"><?php echo $equipe['card-mobile-botao']; ?></a>
           </div>
         </li>
       </ul>
@@ -245,6 +238,7 @@ get_header("2023"); ?>
           handleEquipeCardEvents(matchMedia);
         });
       </script>
+		<?php endif; ?>
     </section>
 
     <!-- CARDS BLOG -->
