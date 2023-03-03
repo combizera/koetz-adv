@@ -12,7 +12,7 @@ get_header("2023"); ?>
 			if( $hero ): ?>
     <section class="hero flex-center">
       <div class="hero-txt flex-center container">
-        <h1>Atendemos qualquer pessoa em qualquer lugar do <span class="txt-red"> mundo</span>!</h1>
+        <h1><?php echo $hero['hero-texto']; ?></h1>
         <a target"_blank" href="<?php echo $hero['link_cta_principal']; ?>" class="btn btn-pri"><?php echo $hero['texto_cta_principal']; ?></a>
       </div>
 		<?php endif; ?>
@@ -24,7 +24,7 @@ get_header("2023"); ?>
 		$citacao = get_field('citacao');
 			if( $citacao ): ?>
       <div class="citacao flex-center container ">
-        <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/martin_luther_jr.webp" alt="martin_luther_jr">
+        <img loading="lazy" src="<?php echo $citacao['foto']; ?>" alt="<?php echo $citacao['alt-da-foto']; ?>">
         <div>
           <h6><span class="aspas">“</span><?php echo $citacao['texto']; ?> </h6>
           <p> - <?php echo $citacao['autor']; ?></p>
@@ -42,7 +42,7 @@ get_header("2023"); ?>
         <div class="solucoes-txt">
           <div class="secao-tit">
             <p>Koetz Advocacia</p>
-            <h2>Soluções Simples e <span class="txt-red"> Inteligentes</span> para Questões Complexas.</h2>
+            <h2><?php echo $solucoes['titulo']; ?></h2>
           </div>
           <p><?php echo $solucoes['texto']; ?></p>
         </div>
@@ -54,36 +54,32 @@ get_header("2023"); ?>
 
     <!-- ÁREAS DE ATUAÇÃO -->
     <section id="areas" class="areas container secao flex-center">
+		<?php
+		$areas = get_field('areas');
+			if( $areas ): ?>
       <div class="secao-tit">
         <p>Veja as Nossas</p>
-        <h2>Frentes de <span class="txt-red"> Atuação</span></h2>
+        <h2><?php echo $areas['titulo']; ?></h2>
       </div>
       <div class="areas-cards grid-4">
-        <a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/" class="areas-card flex-center area-card1">
-          <h3>Benefícios &
-            <br><span class="txt-red"> Previdência</span>
-          </h3>
+        <a href="<?php echo $areas['area-link-1']; ?>" class="areas-card flex-center area-card1">
+          <h3><?php echo $areas['area-nome-1']; ?></h3>
           <p class="areas-seta">➞</p>
         </a>
-        <a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/" class="areas-card flex-center area-card2">
-          <h3>Tributos
-            <br><span class="txt-red">Pessoais</span>
-          </h3>
+        <a href="<?php echo $areas['area-link-2']; ?>" class="areas-card flex-center area-card2">
+          <h3><?php echo $areas['area-nome-2']; ?></h3>
           <p class="areas-seta">➞</p>
         </a>
-        <a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/" class="areas-card flex-center area-card3">
-          <h3>Trabalho e
-            <br><span class="txt-red">migração</span>
-          </h3>
+        <a href="<?php echo $areas['area-link-3']; ?>" class="areas-card flex-center area-card3">
+          <h3><?php echo $areas['area-nome-3']; ?></h3>
           <p class="areas-seta">➞</p>
         </a>
-        <a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/" class="areas-card flex-center area-card4">
-          <h3>Legalização
-            <br><span class="txt-red">do estrangeiro</span>
-          </h3>
+        <a href="<?php echo $areas['area-link-4']; ?>" class="areas-card flex-center area-card4">
+          <h3><?php echo $areas['area-nome-4']; ?></h3>
           <p class="areas-seta">➞</p>
         </a>
       </div>
+		 <?php endif; ?>
     </section>
 
     <!-- ARTICLE -->
@@ -109,11 +105,9 @@ get_header("2023"); ?>
       <ul class="equipe-cards">
         <!-- CARD 1 | MARCELA -->
         <li class="equipe-card">
-          <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/marcela.webp" alt="Marcela Cunha">
+          <img loading="lazy" src="<?php echo $equipe['equipe-foto-1']; ?>" alt="Marcela Cunha">
           <div class="equipe-nome">
-            <span>
-              <strong class="equipe-nome__icon">+</strong><?php echo $equipe['equipe-nome-1']; ?>
-            </span>
+            <span><strong class="equipe-nome__icon">+</strong><?php echo $equipe['equipe-nome-1']; ?></span>
           </div>
           <div class="equipe-info">
             <p><?php echo $equipe['equipe-texto-1']; ?></p>
@@ -122,11 +116,9 @@ get_header("2023"); ?>
 
         <!-- CARD 2 | MURILO -->
         <li class="equipe-card">
-          <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/murilo.webp" alt="Murilo Mella">
+          <img loading="lazy" src="<?php echo $equipe['equipe-foto-2']; ?>" alt="Murilo Mella">
           <div class="equipe-nome">
-            <span>
-              <strong class="equipe-nome__icon">+</strong> <?php echo $equipe['equipe-nome-2']; ?>
-            </span>
+            <span><strong class="equipe-nome__icon">+</strong> <?php echo $equipe['equipe-nome-2']; ?></span>
           </div>
           <div class="equipe-info">
             <p><?php echo $equipe['equipe-texto-2']; ?></p>
@@ -135,11 +127,9 @@ get_header("2023"); ?>
 
         <!-- CARD 3 | EDUARDO -->
         <li class="equipe-card">
-          <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/eduardo.webp" alt="Eduardo">
+          <img loading="lazy" src="<?php echo $equipe['equipe-foto-3']; ?>" alt="Eduardo">
           <div class="equipe-nome">
-            <span>
-              <strong class="equipe-nome__icon">+</strong> <?php echo $equipe['equipe-nome-3']; ?>
-            </span>
+            <span><strong class="equipe-nome__icon">+</strong> <?php echo $equipe['equipe-nome-3']; ?></span>
           </div>
           <div class="equipe-info">
             <p><?php echo $equipe['equipe-texto-3']; ?></p>
@@ -148,11 +138,9 @@ get_header("2023"); ?>
 
         <!-- CARD 4 | GABRIELA -->
         <li class="equipe-card">
-          <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/gabriela.webp" alt="Gabriela Carlotto">
+          <img loading="lazy" src="<?php echo $equipe['equipe-foto-4']; ?>" alt="Gabriela Carlotto">
           <div class="equipe-nome">
-            <span>
-              <strong class="equipe-nome__icon">+</strong> <?php echo $equipe['equipe-nome-4']; ?>
-            </span>
+            <span><strong class="equipe-nome__icon">+</strong> <?php echo $equipe['equipe-nome-4']; ?></span>
           </div>
           <div class="equipe-info">
             <p><?php echo $equipe['equipe-texto-4']; ?></p>
@@ -161,11 +149,9 @@ get_header("2023"); ?>
 
         <!-- CARD 5 | LEANDRO -->
         <li class="equipe-card">
-          <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/leandro.webp" alt="Leandro Sturmer">
+          <img loading="lazy" src="<?php echo $equipe['equipe-foto-5']; ?>" alt="Leandro Sturmer">
           <div class="equipe-nome">
-            <span>
-              <strong class="equipe-nome__icon">+</strong> <?php echo $equipe['equipe-nome-5']; ?>
-            </span>
+            <span><strong class="equipe-nome__icon">+</strong> <?php echo $equipe['equipe-nome-5']; ?></span>
           </div>
           <div class="equipe-info">
             <p><?php echo $equipe['equipe-texto-5']; ?></p>
@@ -180,7 +166,7 @@ get_header("2023"); ?>
           </div>
         </li>
       </ul>
-      <a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/" class="btn btn-pri">Entre em contato</a>
+      <a href="<?php echo $equipe['botao-link']; ?>" class="btn btn-pri"><?php echo $equipe['botao-texto']; ?></a>
 
       <script defer>
         document.addEventListener('DOMContentLoaded', function () {
