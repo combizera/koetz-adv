@@ -1,14 +1,17 @@
 <!-- MODAL MENU -->
 <nav class="header-modal" data-modal-menu="container">
+	<?php
+		$header = get_field('header');
+			if( $header ): ?>
       <button class="hamburguer-fechar" data-modal-menu="fechar"></button>
       <ul>
-        <li class="active"><a href="https://koetzadvocacia.com.br/">Início</a></li>
-		<li><a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/">Fale Conosco</a></li>
-        <li><a href="https://koetzadvocacia.com.br/blog">Blog</a></li>
-        <li><a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/">Benefícios & Previdência</a></li>
-        <li><a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/">Tributos Pessoais</a></li>
-        <li><a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/">Trabalho e Migração</a></li>
-        <li><a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/">Legalização do Estrangeiro</a></li>
+        <li><a href="<?php echo $header['botao-1-link']; ?>"><?php echo $header['botao-1-texto']; ?></a></li>
+		<li><a href="<?php echo $header['botao-2-link']; ?>"><?php echo $header['botao-2-texto']; ?></a></li>
+        <li><a href="<?php echo $header['botao-3-texto']; ?>"><?php echo $header['botao-3-texto']; ?></a></li>
+        <li><a href="<?php echo $header['botao-4-link']; ?>"><?php echo $header['botao-4-texto']; ?></a></li>
+        <li><a href="<?php echo $header['botao-5-link']; ?>"><?php echo $header['botao-5-texto']; ?></a></li>
+        <li><a href="<?php echo $header['botao-6-link']; ?>"><?php echo $header['botao-6-texto']; ?></a></li>
+        <li><a href="<?php echo $header['botao-7-link']; ?>"><?php echo $header['botao-7-texto']; ?></a></li>
         <li>
           <ul class="header-modal-sociais">
             <li><a target="_blank" href="https://www.facebook.com/koetzadvocacia/"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook.svg" alt="Ícone do Facebook da Koetz Advocacia"></a></li>
@@ -19,6 +22,7 @@
           </ul>
         </li>
       </ul>
+	<?php endif; ?>
 </nav>
 
 <!-- FOOTER -->
