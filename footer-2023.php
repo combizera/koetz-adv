@@ -17,7 +17,7 @@
             <li><a target="_blank" href="https://www.facebook.com/koetzadvocacia/"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook.svg" alt="Ícone do Facebook da Koetz Advocacia"></a></li>
             <li><a target="_blank" href="https://www.instagram.com/koetzadv/"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/instagram.svg" alt="Ícone do Instagram da Koetz Advocacia"></a></li>
             <li><a target="_blank" href="https://www.linkedin.com/company/10021439/admin/"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/linkedin.svg" alt="Ícone do Linkedin da Koetz Advocacia"></a></li>
-            <li><a target="_blank" href="#"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/twitter.svg" alt="Ícone do Tiktok da Koetz Advocacia"></a></li>
+            <li><a target="_blank" href="#"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/tiktok.svg" alt="Ícone do Tiktok da Koetz Advocacia"></a></li>
             <li><a target="_blank" href="https://www.youtube.com/@KoetzAdvocacia"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/youtube.svg" alt="Ícone do Youtube da Koetz Advocacia"></a></li>
           </ul>
         </li>
@@ -78,7 +78,7 @@
             <li><a target="_blank" href="https://www.facebook.com/koetzadvocacia/"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/facebook-dark.svg" alt="Ícone do Facebook da Koetz Advocacia"></a></li>
             <li><a target="_blank" href="https://www.instagram.com/koetzadv/"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/instagram-dark.svg" alt="Ícone do Instagram da Koetz Advocacia"></a></li>
             <li><a target="_blank" href="https://www.linkedin.com/company/10021439/admin/"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/linkedin-dark.svg" alt="Ícone do Linkedin da Koetz Advocacia"></a></li>
-            <li><a target="_blank" href="#"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/twitter-dark.svg" alt="Ícone do TikTok da Koetz Advocacia"></a></li>
+            <li><a target="_blank" href="#"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/tiktok-dark.svg" alt="Ícone do Tiktok da Koetz Advocacia"></a></li>
             <li><a target="_blank" href="https://www.youtube.com/@KoetzAdvocacia"><img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/youtube-dark.svg" alt="Ícone do Youtube da Koetz Advocacia"></a></li>
           </ul>
         </nav>
