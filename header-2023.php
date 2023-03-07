@@ -17,7 +17,7 @@
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124271614-1"></script>
-<script>
+<script async>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -27,7 +27,7 @@
 </script>
 
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+<script async>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
@@ -39,7 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Verificação de Domínio do Facebook -->
 
 <!-- Facebook Pixel Code -->
-<script>
+<script async>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -84,11 +84,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <!-- HEADER -->
   <header id="header" class="container">
-    <div class="lang">
+   <!-- <div class="lang">
       <button class="lang-active">PT</button>
       <button>EN</button>
       <button>ES</button>
-    </div>
+    </div> -->
     <div class="header-main">
       <div class="header-logo">
         <a href="/koetz-adv/home/">
@@ -96,7 +96,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>
 
       <div class="header-icones">
-        <a href="#"></a><img loading="lazy" class="header-seta" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/pesquisar.png" alt="Ícone de Pesquisa">
+        <!-- <a href="#"></a><img loading="lazy" class="header-seta" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/pesquisar.png" alt="Ícone de Pesquisa"> -->
         <button class="hamburguer" data-modal-menu="abrir"></button>
       </div>
     </div>

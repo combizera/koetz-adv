@@ -20,5 +20,3 @@ function my_theme_enqueue_styles() {
         get_stylesheet_uri() . '/style.css',
         array( 'parenthandle' ), null);
 }
-
-

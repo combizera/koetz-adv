@@ -6,7 +6,7 @@
       <button class="hamburguer-fechar" data-modal-menu="fechar"></button>
       <ul>
         <li><a href="<?php echo $header['botao-1-link']; ?>"><?php echo $header['botao-1-texto']; ?></a></li>
-		<li><a href="<?php echo $header['botao-2-link']; ?>"><?php echo $header['botao-2-texto']; ?></a></li>
+		    <li><a href="<?php echo $header['botao-2-link']; ?>"><?php echo $header['botao-2-texto']; ?></a></li>
         <li><a href="<?php echo $header['botao-3-texto']; ?>"><?php echo $header['botao-3-texto']; ?></a></li>
         <li><a href="<?php echo $header['botao-4-link']; ?>"><?php echo $header['botao-4-texto']; ?></a></li>
         <li><a href="<?php echo $header['botao-5-link']; ?>"><?php echo $header['botao-5-texto']; ?></a></li>
@@ -27,25 +27,28 @@
 
 <!-- FOOTER -->
 <footer id="footer" class="container">
+	<?php
+		$footer = get_field('footer');
+			if( $footer ): ?>
     <div class="grid-4">
       <div class="footer-logo">
         <img loading="lazy" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/icons/logo-koetz.svg" alt="Logotipo Koetz Advocacia">
-        <p>Nossos clientes em qualquer lugar do planeta tem acesso rápido às suas informações, mas de maneira segura, sem sair de casa ou do trabalho.</p>
+        <p><?php echo $footer['texto-descricao']; ?></p>
       </div>
 
       <div class="footer-menu">
         <p class="footer-tit">Menu</p>
         <nav>
           <ul>
-            <li><a href="https://koetzadvocacia.com.br">Início</a></li>
-			<li><a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/">Fale Conosco</a></li>
-            <li><a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/">Serviços</a></li>
-            <li><a href="https://koetzadvocacia.com.br/advogados-previdenciarios-online-quem-somos/">Nossa Equipe</a></li>
-            <li><a href="https://koetzadvocacia.com.br/blog">Blog</a></li>
-            <li><a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/">Benefícios & Previdência</a></li>
-            <li><a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/">Tributos Pessoais</a></li>
-            <li><a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/">Trabalho e Migração</a></li>
-            <li><a href="https://koetzadvocacia.com.br/entrar-em-contato-com-a-koetz-advocacia/">Legalização do estrangeiro</a></li>
+            <li><a href="<?php echo $footer['menu-link-1']; ?>"><?php echo $footer['menu-texto-1']; ?></a></li>
+			      <li><a href="<?php echo $footer['menu-link-2']; ?>"><?php echo $footer['menu-texto-2']; ?></a></li>
+            <li><a href="<?php echo $footer['menu-link-3']; ?>"><?php echo $footer['menu-texto-3']; ?></a></li>
+            <li><a href="<?php echo $footer['menu-link-4']; ?>"><?php echo $footer['menu-texto-4']; ?></a></li>
+            <li><a href="<?php echo $footer['menu-link-5']; ?>"><?php echo $footer['menu-texto-5']; ?></a></li>
+            <li><a href="<?php echo $footer['menu-link-6']; ?>"><?php echo $footer['menu-texto-6']; ?></a></li>
+            <li><a href="<?php echo $footer['menu-link-7']; ?>"><?php echo $footer['menu-texto-7']; ?></a></li>
+            <li><a href="<?php echo $footer['menu-link-8']; ?>"><?php echo $footer['menu-texto-8']; ?></a></li>
+            <li><a href="<?php echo $footer['menu-link-9']; ?>"><?php echo $footer['menu-texto-9']; ?></a></li>
           </ul>
         </nav>
       </div>
@@ -54,16 +57,16 @@
         <p class="footer-tit">Consultas Jurídicas</p>
         <nav>
           <ul>
-            <li><a href="https://pages.koetzadvocacia.com.br/aposentadoria">Aposentadoria Comum</a></li>
-            <li><a href="https://pages.koetzadvocacia.com.br/aposentadoria-especial">Aposentadoria Especial</a></li>
-			  <li><a href="https://pages.koetzadvocacia.com.br/servidor-publico">Aposentadoria do Servidor Público</a></li>
-            <li><a href="https://pages.koetzadvocacia.com.br/consulta-de-beneficio-por-incapacidade">Benefícios por incapacidade</a></li>
-            <li><a href="https://pages.koetzadvocacia.com.br/retencao-na-aposentadoria-de-brasileiro-no-exterior">Suspensão da cobrança de 25% no exterior</a></li>
-            <li><a href="https://pages.koetzadvocacia.com.br/beneficio-acordo-internacional">Benefício Internacional</a></li>
-            <li><a href="https://pages.koetzadvocacia.com.br/consulta-estrangeiros-no-brasil">Consultoria para estrangeiro no Brasil</a></li>
-            <li><a href="https://pages.koetzadvocacia.com.br/consulta-de-revisao-de-beneficio">Revisão de benefício</a></li>
-			  <li><a href="https://pages.koetzadvocacia.com.br/pensao-por-morte-consulta">Pensão por Morte</a></li>
-            <li><a href="https://pages.koetzadvocacia.com.br/atendimento-previdenciario">Outros atendimentos</a></li>
+            <li><a href="<?php echo $footer['areas-link-1']; ?>"><?php echo $footer['areas-texto-1']; ?></a></li>
+            <li><a href="<?php echo $footer['areas-link-2']; ?>"><?php echo $footer['areas-texto-2']; ?></a></li>
+			      <li><a href="<?php echo $footer['areas-link-3']; ?>"><?php echo $footer['areas-texto-3']; ?></a></li>
+            <li><a href="<?php echo $footer['areas-link-4']; ?>"><?php echo $footer['areas-texto-4']; ?></a></li>
+            <li><a href="<?php echo $footer['areas-link-5']; ?>"><?php echo $footer['areas-texto-5']; ?></a></li>
+            <li><a href="<?php echo $footer['areas-link-6']; ?>"><?php echo $footer['areas-texto-6']; ?></a></li>
+            <li><a href="<?php echo $footer['areas-link-7']; ?>"><?php echo $footer['areas-texto-7']; ?></a></li>
+            <li><a href="<?php echo $footer['areas-link-8']; ?>"><?php echo $footer['areas-texto-8']; ?></a></li>
+			<li><a href="<?php echo $footer['areas-link-9']; ?>"><?php echo $footer['areas-texto-9']; ?></a></li>
+            <li><a href="<?php echo $footer['areas-link-10']; ?>"><?php echo $footer['areas-texto-10']; ?></a></li>
           </ul>
         </nav>
       </div>
@@ -90,6 +93,7 @@
       <p>© 2023 Koetz Advocacia. </p>
       <p>Todos os Direitos Reservados</p>
     </div>
+	<?php endif; ?>
   </footer>
 
   <!-- MEUS SCRIPTS -->
