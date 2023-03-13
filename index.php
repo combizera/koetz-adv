@@ -1,7 +1,7 @@
 <?php
 // Template name: Blog (NEW)
-require_once get_template_directory() . '/assets/inc/custom-class-walker-category.php';
-get_header();
+require_once get_stylesheet_directory() . '/assets/inc/custom-class-walker-category.php';
+get_header('2023');
 ?>
 
   <?php include(TEMPLATEPATH . "/assets/inc/hero.php"); ?>
@@ -190,4 +190,4 @@ get_header();
   <?php include(TEMPLATEPATH . "/assets/inc/cta-email.php"); ?>
 
 <!-- Para pegar o Footer -->
-<?php get_footer(); ?>
+<?php get_footer('2023'); ?>
