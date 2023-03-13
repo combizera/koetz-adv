@@ -20,3 +20,8 @@ function my_theme_enqueue_styles() {
         get_stylesheet_uri() . '/style.css',
         array( 'parenthandle' ), null);
 }
+
+function add_setup_config() {
+  add_theme_support('post-thumbnails');
+}
+add_action( 'after_setup_theme', 'add_setup_config', 0 );
