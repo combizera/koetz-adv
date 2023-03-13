@@ -1,6 +1,8 @@
 <?php
 // Template name: Blog (NEW)
-get_header(); ?>
+require_once get_template_directory() . '/assets/inc/custom-class-walker-category.php';
+get_header();
+?>
 
   <?php include(TEMPLATEPATH . "/assets/inc/hero.php"); ?>
 
@@ -154,6 +156,21 @@ get_header(); ?>
 
         <div class="aside-card blog-aside-category">
           <p class="aside-tit">Categorias</p>
+          <nav>
+            <ul>
+              <?php
+              $categories = wp_list_categories([
+                'title_li'      => '',
+                'show_count'    => true,
+                'hide_empty'    => false,
+                'taxonomy'      => 'category',
+                'exclude'       => [1], // Uncategorized
+                'walker'        => new Custom_Walker_Category()
+              ]);
+              echo $categories;
+              ?>
+            </ul>
+          </nav>
           <nav>
             <ul>
               <li>

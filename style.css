@@ -1,13 +1,12 @@
 @charset "UTF-8";
 /*
-  Theme Name:   Neve Child
-  Description:  Neve Child Theme
-  Author:       Agência Solary
-  Author URI:   http://agenciasolary.com.br
-  Template:     neve
-  Version:      1.5
-  Text Domain:  nevechild
-  Data: 07.03.23
+Theme Name:   Neve Child
+Description:  Neve Child Theme
+Author:       Agência Solary
+Author URI:   http://agenciasolary.com.br
+Template:     neve
+Version:      1.5
+Text Domain:  nevechild
 */
 * {
   padding: 0;
@@ -132,7 +131,7 @@ img {
   background-image: url("assets/img/banner_cta.webp");
   padding: 100px 60px;
 }
-#cta-email [type="submit"] {
+#cta-email [type=submit] {
   margin-top: 20px;
   width: 100%;
   padding: 10px;
@@ -142,7 +141,7 @@ img {
   #cta-email {
     padding: 60px 20px;
   }
-  #cta-email [type="submit"] {
+  #cta-email [type=submit] {
     margin-top: 40px;
   }
 }
@@ -332,7 +331,7 @@ img {
     transform: translate3d(0, 0px, 0);
   }
 }
-[data-modal-menu="container"] {
+[data-modal-menu=container] {
   -webkit-animation: show-modal 0.5s forwards;
   animation: show-modal 0.5s forwards;
   display: none;
@@ -350,7 +349,7 @@ img {
   width: 40%;
   z-index: 2000;
 }
-[data-modal-menu="container"] ul {
+[data-modal-menu=container] ul {
   list-style: none;
   gap: 40px;
   display: -webkit-box;
@@ -361,12 +360,12 @@ img {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-[data-modal-menu="container"] a {
+[data-modal-menu=container] a {
   color: #efefef;
   text-decoration: none;
   text-transform: uppercase;
 }
-[data-modal-menu="container"] .header-modal-sociais {
+[data-modal-menu=container] .header-modal-sociais {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -581,13 +580,7 @@ img {
   position: absolute;
   inset: 0;
   width: 100%;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(rgba(0, 0, 0, 0)),
-    to(rgba(0, 0, 0, 0.67))
-  );
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.67)));
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.67) 100%);
   z-index: 0;
 }
@@ -716,8 +709,8 @@ h1 {
   text-transform: uppercase;
   font-weight: 700;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 2rem;
-  line-height: 2.5rem;
+  font-size: 3.75rem;
+  line-height: 4.25rem;
 }
 @media screen and (max-width: 960px) {
   h1 {
@@ -925,7 +918,7 @@ a {
   background-image: url("assets/img/banner_cta.webp");
   padding: 100px 60px;
 }
-#cta-email [type="submit"] {
+#cta-email [type=submit] {
   margin-top: 20px;
   width: 100%;
   padding: 10px;
@@ -935,7 +928,7 @@ a {
   #cta-email {
     padding: 60px 20px;
   }
-  #cta-email [type="submit"] {
+  #cta-email [type=submit] {
     margin-top: 40px;
   }
 }
@@ -998,17 +991,9 @@ a {
 
 #na-midia .midia-cards {
   padding-top: 60px;
-  align-items: center;
 }
-
-.midia-cards a {
-  display: flex;
-  justify-content: center;
-}
-
 #na-midia .midia-cards img {
   max-width: 100%;
-  max-height: 70px;
   -o-object-fit: cover;
   object-fit: cover;
   -webkit-transition: 0.3s;
@@ -1386,8 +1371,7 @@ a {
   font-size: 30px;
   -webkit-transform-origin: left center;
   transform-origin: left center;
-  -webkit-transform: rotate(-90deg) translateY(calc(50% + 5px))
-    translateX(-1rem);
+  -webkit-transform: rotate(-90deg) translateY(calc(50% + 5px)) translateX(-1rem);
   transform: rotate(-90deg) translateY(calc(50% + 5px)) translateX(-1rem);
   -webkit-transition: -webkit-transform 300ms ease;
   transition: -webkit-transform 300ms ease;
@@ -1564,13 +1548,7 @@ a {
   position: absolute;
   inset: 0;
   width: 100%;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(rgba(0, 0, 0, 0)),
-    to(#000)
-  );
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#000));
   background: linear-gradient(rgba(0, 0, 0, 0) 0%, #000 100%);
 }
 .blog .hero-txt {
