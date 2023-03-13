@@ -4,10 +4,8 @@ require_once get_stylesheet_directory() . '/assets/inc/custom-class-walker-categ
 get_header('2023');
 ?>
 
-  <?php include(TEMPLATEPATH . "/assets/inc/hero.php"); ?>
-
   <!-- MAIN -->
-  <main class="container">
+  <main class="container blog">
     <!-- HERO -->
     <section class="hero">
       <div class="blog-img">
@@ -187,7 +185,7 @@ get_header('2023');
   </main>
 
   <!-- CTA EMAIL -->
-  <?php include(TEMPLATEPATH . "/assets/inc/cta-email.php"); ?>
+  <?php include(STYLESHEETPATH . "/assets/inc/cta-email.php"); ?>
 
 <!-- Para pegar o Footer -->
 <?php get_footer('2023'); ?>
