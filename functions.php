@@ -13,12 +13,15 @@ function get_template_name() {
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles', 11 );
 
 function my_theme_enqueue_styles() {
-  		if (get_template_name() === 'home new'){
+  if (get_template_name() === 'home new' || get_template_name() === 'default' || get_template_name() === 'blog (new)') {
 		wp_dequeue_style('neve-style');
-		}
-	wp_enqueue_style( 'child-style',
-        get_stylesheet_uri() . '/style.css',
-        array( 'parenthandle' ), null);
+  }
+	wp_enqueue_style(
+    'child-style',
+    get_stylesheet_uri() . '/style.css',
+    [ 'parenthandle' ],
+    null
+  );
 }
 
 function add_setup_config() {
