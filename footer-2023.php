@@ -1,7 +1,8 @@
+<?php $home_page_id = get_option('page_on_front'); ?>
 <!-- MODAL MENU -->
 <nav class="header-modal" data-modal-menu="container">
 	<?php
-		$header = get_field('header');
+		$header = get_field('header', $home_page_id);
 			if( $header ): ?>
       <button class="hamburguer-fechar" data-modal-menu="fechar"></button>
       <ul>
@@ -28,7 +29,7 @@
 <!-- FOOTER -->
 <footer id="footer" class="container">
 	<?php
-		$footer = get_field('footer');
+		$footer = get_field('footer', $home_page_id);
 			if( $footer ): ?>
     <div class="grid-4">
       <div class="footer-logo">
